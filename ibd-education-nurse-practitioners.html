@@ -1,0 +1,2179 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{-webkit-tap-highlight-color:transparent;-webkit-appearance:none;appearance:none;background-color:transparent;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQwIDcwSDIwVjUwbTIwIDBMMjAgNzBtNDAtNDBoMjB2MjBtLTIwIDAgMjAtMjAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIwIDUwaDIwdjIwbS0yMCAwIDIwLTIwbTQwIDBINjBWMzBtMjAgMEw2MCA1MCIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNODcuOCA0Ny41Qzg5IDUwIDg3LjcgNTIgODUgNTJIMzVhOC43IDguNyAwIDAgMS03LjItNC41bC0xNS42LTMxQzExIDE0IDEyLjIgMTIgMTUgMTJoNTBhOC44IDguOCAwIDAgMSA3LjIgNC41ek02MCA1MnYzNm0tMTAgMGgyME00NSA0MmgyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iNSIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-bigger{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNMTIgNTBoODBNNTIgOTBWMTAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjUiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-smaller{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNMTIgNTBoODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjUiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}@keyframes __bespoke_marp_transition_reduced_outgoing__{0%{opacity:1}to{opacity:0}}@keyframes __bespoke_marp_transition_reduced_incoming__{0%{mix-blend-mode:plus-lighter;opacity:0}to{mix-blend-mode:plus-lighter;opacity:1}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{::page-transition-container(*){animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-timing-function:ease}::page-transition-incoming-image(*),::page-transition-outgoing-image(*){animation-delay:0s;animation-direction:var(--marp-bespoke-transition-animation-direction,normal);animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-fill-mode:both;animation-name:var(--marp-bespoke-transition-animation-name,var(--marp-bespoke-transition-animation-name-fallback,__bespoke_marp_transition_no_animation__));mix-blend-mode:normal}::page-transition-outgoing-image(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_outgoing__;animation-timing-function:ease}::page-transition-incoming-image(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_incoming__;animation-timing-function:ease}::page-transition-incoming-image(root),::page-transition-outgoing-image(root){animation-timing-function:linear}::page-transition-incoming-image(__bespoke_marp_transition_osc__),::page-transition-outgoing-image(__bespoke_marp_transition_osc__){animation-duration:0s!important;animation-name:__bespoke_marp_transition_osc__!important}::page-transition-incoming-image(__bespoke_marp_transition_osc__){opacity:0!important}.bespoke-marp-transition-warming-up::page-transition-container(*),.bespoke-marp-transition-warming-up::page-transition-incoming-image(*),.bespoke-marp-transition-warming-up::page-transition-outgoing-image(*){animation-play-state:paused!important}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide:not(.bespoke-marp-active) *{page-transition-tag:none!important}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}}@media screen and (prefers-reduced-motion:reduce){svg.bespoke-marp-slide *{page-transition-tag:none!important}}@media screen{[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{bottom:0;left:0;position:absolute;right:0;top:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{page-transition-tag:__bespoke_marp_transition_osc__;background:rgba(0,0,0,.65);border-radius:7px;bottom:50px;color:#fff;contain:paint;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;user-select:none;white-space:nowrap;will-change:transform;z-index:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:transparent}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template:"current dragbar next" minmax(140px,1fr) "current dragbar note" 2fr "info    dragbar note" 3em;grid-template-columns:minmax(3px,var(--bespoke-marp-presenter-split-ratio,66%)) 0 minmax(3px,1fr);height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container{background:#0288d1;cursor:col-resize;grid-area:dragbar;margin-left:-3px;opacity:0;position:relative;transition:opacity .4s linear .1s;width:6px;z-index:10}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container:hover{opacity:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container.active{opacity:1;transition-delay:0s}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:transparent;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note;position:relative;z-index:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper{bottom:0;display:block;left:0;position:absolute;right:0;top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons{background:rgba(0,0,0,.65);border-radius:4px;bottom:0;display:flex;gap:4px;margin:12px;opacity:0;padding:6px;pointer-events:none;position:absolute;right:0;transition:opacity .2s linear}}@media screen{body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons:focus-within,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper:focus-within+.bespoke-marp-presenter-note-buttons,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container:hover .bespoke-marp-presenter-note-buttons{opacity:1;pointer-events:auto}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{word-wrap:break-word;box-sizing:border-box;font-size:calc(1.1em*var(--bespoke-marp-note-font-scale, 1));height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;scrollbar-color:hsla(0,0%,93%,.5) transparent;scrollbar-width:thin;white-space:pre-wrap;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:transparent}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:hsla(0,0%,93%,.5);border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;overflow:hidden;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer:hover{cursor:pointer}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>@charset "UTF-8";@import url("https://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Mono:400,700&display=swap");div#p>svg>foreignObject>section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center}div#p>svg>foreignObject>section:after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#p>svg>foreignObject>section:not([data-marpit-pagination]):after{display:none}/* Normalization */div#p>svg>foreignObject>section :is(h1,marp-h1){font-size:2em;margin:0.67em 0}div#p>svg>foreignObject>section video::-webkit-media-controls{will-change:transform}@page{size:1280px 720px;margin:0}@media print{body,html{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#p>svg>foreignObject>section{page-break-before:always;break-before:page}div#p>svg>foreignObject>section,div#p>svg>foreignObject>section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;transition:none!important}div#p>svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}div#p>svg>foreignObject>section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}
+/*!
+ * Marp / Marpit Gaia theme.
+ *
+ * @theme gaia
+ * @author Yuki Hattori
+ *
+ * @auto-scaling true
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ */div#p>svg>foreignObject>section :is(pre,marp-pre) code.hljs{display:block;overflow-x:auto;padding:1em}div#p>svg>foreignObject>section code.hljs{padding:3px 5px}div#p>svg>foreignObject>section .hljs{background:#000;color:#f8f8f8}div#p>svg>foreignObject>section .hljs-comment,div#p>svg>foreignObject>section .hljs-quote{color:#aeaeae;font-style:italic}div#p>svg>foreignObject>section .hljs-keyword,div#p>svg>foreignObject>section .hljs-selector-tag,div#p>svg>foreignObject>section .hljs-type{color:#e28964}div#p>svg>foreignObject>section .hljs-string{color:#65b042}div#p>svg>foreignObject>section .hljs-subst{color:#daefa3}div#p>svg>foreignObject>section .hljs-link,div#p>svg>foreignObject>section .hljs-regexp{color:#e9c062}div#p>svg>foreignObject>section .hljs-name,div#p>svg>foreignObject>section .hljs-section,div#p>svg>foreignObject>section .hljs-tag,div#p>svg>foreignObject>section .hljs-title{color:#89bdff}div#p>svg>foreignObject>section .hljs-class .hljs-title,div#p>svg>foreignObject>section .hljs-doctag,div#p>svg>foreignObject>section .hljs-title.class_{text-decoration:underline}div#p>svg>foreignObject>section .hljs-bullet,div#p>svg>foreignObject>section .hljs-number,div#p>svg>foreignObject>section .hljs-symbol{color:#3387cc}div#p>svg>foreignObject>section .hljs-params,div#p>svg>foreignObject>section .hljs-template-variable,div#p>svg>foreignObject>section .hljs-variable{color:#3e87e3}div#p>svg>foreignObject>section .hljs-attribute{color:#cda869}div#p>svg>foreignObject>section .hljs-meta{color:#8996a8}div#p>svg>foreignObject>section .hljs-formula{background-color:#0e2231;color:#f8f8f8;font-style:italic}div#p>svg>foreignObject>section .hljs-addition{background-color:#253b22;color:#f8f8f8}div#p>svg>foreignObject>section .hljs-deletion{background-color:#420e09;color:#f8f8f8}div#p>svg>foreignObject>section .hljs-selector-class{color:#9b703f}div#p>svg>foreignObject>section .hljs-selector-id{color:#8b98ab}div#p>svg>foreignObject>section .hljs-emphasis{font-style:italic}div#p>svg>foreignObject>section .hljs-strong{font-weight:700}div#p>svg>foreignObject>section :is(h1,marp-h1),div#p>svg>foreignObject>section :is(h2,marp-h2),div#p>svg>foreignObject>section :is(h3,marp-h3),div#p>svg>foreignObject>section :is(h4,marp-h4),div#p>svg>foreignObject>section :is(h5,marp-h5),div#p>svg>foreignObject>section :is(h6,marp-h6){margin:.5em 0 0}div#p>svg>foreignObject>section :is(h1,marp-h1) strong,div#p>svg>foreignObject>section :is(h2,marp-h2) strong,div#p>svg>foreignObject>section :is(h3,marp-h3) strong,div#p>svg>foreignObject>section :is(h4,marp-h4) strong,div#p>svg>foreignObject>section :is(h5,marp-h5) strong,div#p>svg>foreignObject>section :is(h6,marp-h6) strong{font-weight:inherit}div#p>svg>foreignObject>section :is(h1,marp-h1)::part(auto-scaling),div#p>svg>foreignObject>section :is(h2,marp-h2)::part(auto-scaling),div#p>svg>foreignObject>section :is(h3,marp-h3)::part(auto-scaling),div#p>svg>foreignObject>section :is(h4,marp-h4)::part(auto-scaling),div#p>svg>foreignObject>section :is(h5,marp-h5)::part(auto-scaling),div#p>svg>foreignObject>section :is(h6,marp-h6)::part(auto-scaling){max-height:580px}div#p>svg>foreignObject>section :is(h1,marp-h1){font-size:1.8em}div#p>svg>foreignObject>section :is(h2,marp-h2){font-size:1.5em}div#p>svg>foreignObject>section :is(h3,marp-h3){font-size:1.3em}div#p>svg>foreignObject>section :is(h4,marp-h4){font-size:1.1em}div#p>svg>foreignObject>section :is(h5,marp-h5){font-size:1em}div#p>svg>foreignObject>section :is(h6,marp-h6){font-size:.9em}div#p>svg>foreignObject>section blockquote,div#p>svg>foreignObject>section p{margin:1em 0 0}div#p>svg>foreignObject>section ol>li,div#p>svg>foreignObject>section ul>li{margin:.3em 0 0}div#p>svg>foreignObject>section ol>li>p,div#p>svg>foreignObject>section ul>li>p{margin:.6em 0 0}div#p>svg>foreignObject>section code{display:inline-block;font-family:Roboto Mono,monospace;font-size:.8em;letter-spacing:0;margin:-.1em .15em;padding:.1em .2em;vertical-align:baseline}div#p>svg>foreignObject>section :is(pre,marp-pre){display:block;margin:1em 0 0;overflow:visible}div#p>svg>foreignObject>section :is(pre,marp-pre) code{box-sizing:border-box;font-size:.7em;margin:0;min-width:100%;padding:.5em}div#p>svg>foreignObject>section :is(pre,marp-pre)::part(auto-scaling){max-height:calc(580px - 1em)}div#p>svg>foreignObject>section blockquote{margin:1em 0 0;padding:0 1em;position:relative}div#p>svg>foreignObject>section blockquote:after,div#p>svg>foreignObject>section blockquote:before{content:"“";display:block;font-family:Times New Roman,serif;font-weight:700;position:absolute}div#p>svg>foreignObject>section blockquote:before{left:0;top:0}div#p>svg>foreignObject>section blockquote:after{bottom:0;right:0;transform:rotate(180deg)}div#p>svg>foreignObject>section blockquote>:first-child{margin-top:0}div#p>svg>foreignObject>section mark{background:transparent}div#p>svg>foreignObject>section table{border-collapse:collapse;border-spacing:0;margin:1em 0 0}div#p>svg>foreignObject>section table td,div#p>svg>foreignObject>section table th{border-style:solid;border-width:1px;padding:.2em .4em}div#p>svg>foreignObject>section footer,div#p>svg>foreignObject>section header,div#p>svg>foreignObject>section:after{box-sizing:border-box;font-size:66%;height:70px;line-height:50px;overflow:hidden;padding:10px 25px;position:absolute}div#p>svg>foreignObject>section:after{--marpit-root-font-size:66%}div#p>svg>foreignObject>section header{top:0}div#p>svg>foreignObject>section footer,div#p>svg>foreignObject>section header{left:0;right:0}div#p>svg>foreignObject>section footer{bottom:0}div#p>svg>foreignObject>section{word-wrap:break-word;--color-background:#fff8e1;--color-background-stripe:rgba(69,90,100,.1);--color-foreground:#455a64;--color-dimmed:#6a7a7d;--color-highlight:#0288d1;background-color:var(--color-background);background-image:linear-gradient(135deg,hsla(0,0%,53%,0),hsla(0,0%,53%,.02) 50%,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.05));color:var(--color-foreground);font-family:Lato,Avenir Next,Avenir,Trebuchet MS,Segoe UI,sans-serif;font-size:35px;height:720px;letter-spacing:1.25px;line-height:1.35;padding:70px;width:1280px}div#p>svg>foreignObject>section{--marpit-root-font-size:35px}div#p>svg>foreignObject>section:after{bottom:0;font-size:80%;right:0}div#p>svg>foreignObject>section:after{--marpit-root-font-size:80%}div#p>svg>foreignObject>section a,div#p>svg>foreignObject>section mark{color:var(--color-highlight)}div#p>svg>foreignObject>section code{background:var(--color-dimmed);color:var(--color-background)}div#p>svg>foreignObject>section :is(h1,marp-h1) strong,div#p>svg>foreignObject>section :is(h2,marp-h2) strong,div#p>svg>foreignObject>section :is(h3,marp-h3) strong,div#p>svg>foreignObject>section :is(h4,marp-h4) strong,div#p>svg>foreignObject>section :is(h5,marp-h5) strong,div#p>svg>foreignObject>section :is(h6,marp-h6) strong{color:var(--color-highlight)}div#p>svg>foreignObject>section :is(pre,marp-pre){background:var(--color-foreground)}div#p>svg>foreignObject>section :is(pre,marp-pre)>code{background:transparent}div#p>svg>foreignObject>section blockquote:after,div#p>svg>foreignObject>section blockquote:before,div#p>svg>foreignObject>section footer,div#p>svg>foreignObject>section header,div#p>svg>foreignObject>section section:after{color:var(--color-dimmed)}div#p>svg>foreignObject>section table td,div#p>svg>foreignObject>section table th{border-color:var(--color-foreground)}div#p>svg>foreignObject>section table thead th{background:var(--color-foreground);color:var(--color-background)}div#p>svg>foreignObject>section table tbody>tr:nth-child(odd) td,div#p>svg>foreignObject>section table tbody>tr:nth-child(odd) th{background:var(--color-background-stripe,transparent)}div#p>svg>foreignObject>section>:first-child,div#p>svg>foreignObject>section>header:first-child+*{margin-top:0}div#p>svg>foreignObject>section:where(.invert){--color-background:#455a64;--color-background-stripe:rgba(255,248,225,.1);--color-foreground:#fff8e1;--color-dimmed:#dad8c8;--color-highlight:#81d4fa}div#p>svg>foreignObject>section:where(.gaia){--color-background:#0288d1;--color-background-stripe:rgba(255,248,225,.1);--color-foreground:#fff8e1;--color-dimmed:#cce2de;--color-highlight:#81d4fa}div#p>svg>foreignObject>section:where(.lead){display:flex;flex-flow:column nowrap;justify-content:center}div#p>svg>foreignObject>section:where(.lead) :is(h1,marp-h1),div#p>svg>foreignObject>section:where(.lead) :is(h2,marp-h2),div#p>svg>foreignObject>section:where(.lead) :is(h3,marp-h3),div#p>svg>foreignObject>section:where(.lead) :is(h4,marp-h4),div#p>svg>foreignObject>section:where(.lead) :is(h5,marp-h5),div#p>svg>foreignObject>section:where(.lead) :is(h6,marp-h6){text-align:center}div#p>svg>foreignObject>section:where(.lead) p{text-align:center}div#p>svg>foreignObject>section:where(.lead) blockquote>:is(h1,marp-h1),div#p>svg>foreignObject>section:where(.lead) blockquote>:is(h2,marp-h2),div#p>svg>foreignObject>section:where(.lead) blockquote>:is(h3,marp-h3),div#p>svg>foreignObject>section:where(.lead) blockquote>:is(h4,marp-h4),div#p>svg>foreignObject>section:where(.lead) blockquote>:is(h5,marp-h5),div#p>svg>foreignObject>section:where(.lead) blockquote>:is(h6,marp-h6),div#p>svg>foreignObject>section:where(.lead) blockquote>p{text-align:left}div#p>svg>foreignObject>section:where(.lead) ol>li>p,div#p>svg>foreignObject>section:where(.lead) ul>li>p{text-align:left}div#p>svg>foreignObject>section:where(.lead) table{margin-left:auto;margin-right:auto}div#p>svg>foreignObject>section[data-marpit-scope-8QrMJNmf] table{font-size:22px}div#p>svg>foreignObject>section[data-marpit-scope-5PXp8IF2] table{font-size:32px;text-align:left}div#p>svg>foreignObject>section[data-marpit-scope-5PXp8IF2] th{background-color:inherit;color:inherit;font-weight:normal}div#p>svg>foreignObject>section[data-marpit-scope-5PXp8IF2] td,div#p>svg>foreignObject>section[data-marpit-scope-5PXp8IF2] th{border:none}div#p>svg>foreignObject>section[data-marpit-scope-FwWvijBU] table{font-size:32px;text-align:left}div#p>svg>foreignObject>section[data-marpit-scope-FwWvijBU] th{background-color:inherit;color:inherit;font-weight:normal}div#p>svg>foreignObject>section[data-marpit-scope-FwWvijBU] td,div#p>svg>foreignObject>section[data-marpit-scope-FwWvijBU] th{border:none}div#p>svg>foreignObject>section[data-marpit-scope-d8KrFjT4] table{font-size:32px;text-align:left}div#p>svg>foreignObject>section[data-marpit-scope-d8KrFjT4] th{background-color:inherit;color:inherit;font-weight:normal}div#p>svg>foreignObject>section[data-marpit-scope-d8KrFjT4] td,div#p>svg>foreignObject>section[data-marpit-scope-d8KrFjT4] th{border:none}div#p>svg>foreignObject>section[data-marpit-scope-bAruZTRk] table{font-size:32px;text-align:left}div#p>svg>foreignObject>section[data-marpit-scope-bAruZTRk] th{background-color:inherit;color:inherit;font-weight:normal}div#p>svg>foreignObject>section[data-marpit-scope-bAruZTRk] td,div#p>svg>foreignObject>section[data-marpit-scope-bAruZTRk] th{border:none}div#p>svg>foreignObject>section[data-marpit-scope-PDGWBeRw] table{font-size:30px;text-align:left}div#p>svg>foreignObject>section[data-marpit-scope-PDGWBeRw] th{background-color:inherit;color:inherit}div#p>svg>foreignObject>section[data-marpit-scope-PDGWBeRw] td,div#p>svg>foreignObject>section[data-marpit-scope-PDGWBeRw] th{border:none}div#p>svg>foreignObject>section[data-marpit-scope-zKunpoMA] table{font-size:30px}div#p>svg>foreignObject>section[data-marpit-scope-W0T3lzjS] li{font-size:30px}div#p>svg>foreignObject>section[data-marpit-scope-mGbakKI7] li{font-size:30px}div#p>svg>foreignObject>section[data-marpit-scope-E1uS7Ere] li{font-size:32px}div#p>svg>foreignObject>section[data-marpit-scope-R19zgElN] li{font-size:30px}div#p>svg>foreignObject>section[data-marpit-scope-md6pcwTf] table{font-size:32px}div#p>svg>foreignObject>section[data-marpit-scope-X7jpMnqF] li{font-size:28px}div#p>svg>foreignObject>section[data-marpit-scope-UMvMCkgg] li{font-size:30px}div#p>svg>foreignObject>section[data-marpit-scope-Eyicv2xB] table{font-size:23px}div#p>svg>foreignObject>section[data-marpit-scope-Wa3emG0O] th{background-color:inherit;color:inherit}div#p>svg>foreignObject>section[data-marpit-scope-Wa3emG0O] td,div#p>svg>foreignObject>section[data-marpit-scope-Wa3emG0O] th{border:none}div#p>svg>foreignObject>section[data-marpit-scope-ZrmYPCKC] table{font-size:28px;text-align:left}div#p>svg>foreignObject>section[data-marpit-scope-ZrmYPCKC] th{background-color:inherit;color:inherit}div#p>svg>foreignObject>section[data-marpit-scope-ZrmYPCKC] td,div#p>svg>foreignObject>section[data-marpit-scope-ZrmYPCKC] th{border:none}div#p>svg>foreignObject>section[data-marpit-scope-Lta3OyfJ] table{font-size:30px}div#p>svg>foreignObject>section[data-marpit-scope-m2x0jXif] li{font-size:22px}div#p>svg>foreignObject>section[data-marpit-scope-GDXtc6tO] li{font-size:34px}div#p>svg>foreignObject>section[data-marpit-scope-PGo1xrHg] table{font-size:26px}div#p>svg>foreignObject>section[data-marpit-scope-PwUOYU6u] table{text-align:left}div#p>svg>foreignObject>section[data-marpit-scope-PwUOYU6u] th{background-color:inherit;color:inherit}div#p>svg>foreignObject>section[data-marpit-scope-B4juQcPA] li{font-size:34px}div#p>svg>foreignObject>section[data-marpit-scope-W6DkOuyO] li{font-size:34px}div#p>svg>foreignObject>section[data-marpit-scope-U7dSQXoY] table{text-align:left;font-size:30px}div#p>svg>foreignObject>section[data-marpit-scope-PuaS6gRR] li{font-size:33px}div#p>svg>foreignObject>section[data-marpit-scope-VoYHjQlu] td,div#p>svg>foreignObject>section[data-marpit-scope-VoYHjQlu] th{border:0}div#p>svg>foreignObject>section[data-marpit-scope-VoYHjQlu] th{background-color:inherit;color:inherit}div#p>svg>foreignObject>section[data-marpit-scope-wnlNMPoi] li{font-size:33px}div#p>svg>foreignObject>section[data-marpit-scope-GGVxUUYq] li{font-size:33px}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="gaia" data-marpit-pagination="1" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Goals of Caring for Patients with IBD</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-theme="gaia" data-marpit-pagination="2" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Goals to be Covered</h2>
+<ul>
+<li>Goal #1: Disease Classification</li>
+<li>Goal #2: Disease Management Strategy</li>
+<li>Goal #3: Treatment (to be covered in other lectures today)</li>
+<li>Goal #4: Monitoring</li>
+<li>Goal #5: Taking Care of the Whole Patient</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-theme="gaia" data-marpit-pagination="3" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Goal #1</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-theme="gaia" data-marpit-pagination="4" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Goal 1: Disease Classification<sup>1</sup></h2>
+<p>Aim to idenfity:</p>
+<ul>
+<li>IBD Type</li>
+<li>Location and extend of inflammation</li>
+<li>Disease phenotype</li>
+<li>Disease activity: snashot in time</li>
+<li>Disease severity</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="5" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h2>Chron's Disease Burden: Low Risk<sup>2</sup></h2>
+
+<p><img src="d1.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="6" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h1>Chron's Disease Burden: Moderate to High Risk<sup>3</sup></h1>
+
+<p><img src="d2.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-theme="gaia" data-marpit-pagination="7" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Disease Activity: Crohn's Disease<sup>4</sup></h2>
+<ul>
+<li>Categories include: remission, mild, moderate, and severe</li>
+<li>Based upon subjective measures including symptoms, QOL, and disease complications</li>
+<li>Can use scoring subsystems like Harvey Bradshaw, Crohn's Disease Activity Index (CDAI) but misleading</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="8" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h2>Ulcerative Colitis Burden: Risk for Colectomy<sup>5</sup></h2>
+
+<p><img src="d3.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-marpit-scope-8QrMJNmf="" data-paginate="true" data-theme="gaia" data-marpit-pagination="9" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Disease Activity: Ulcerative Colitis<sup>6</sup></h2>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Remission</th>
+<th>Mild</th>
+<th>Moderate-severe</th>
+<th>Fulminant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stools (no ./d)</td>
+<td>Formed stools</td>
+<td>&lt;4</td>
+<td>&gt;6</td>
+<td>&gt;10</td>
+</tr>
+<tr>
+<td>Blood in stools</td>
+<td>None</td>
+<td>Intermittent</td>
+<td>Frequent</td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td>Urgency</td>
+<td>None</td>
+<td>Mild, occasional</td>
+<td>Often</td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td>Hemoglobin</td>
+<td>Normal</td>
+<td>Normal</td>
+<td>&lt;75% of normal</td>
+<td>Transfusion required</td>
+</tr>
+<tr>
+<td>ESR</td>
+<td>&lt;30</td>
+<td>&lt;30</td>
+<td>&gt;30</td>
+<td>&gt;30</td>
+</tr>
+<tr>
+<td>CRP (mg/L)</td>
+<td>Normal</td>
+<td>Elevated</td>
+<td>Elevated</td>
+<td>Elevated</td>
+</tr>
+<tr>
+<td>FC (µg/g)</td>
+<td>&lt;150-200</td>
+<td>&gt;150-200</td>
+<td>&gt;150-200</td>
+<td>&gt;150-200</td>
+</tr>
+<tr>
+<td>Endoscopy (Mayo subscore)</td>
+<td>0-1</td>
+<td>1</td>
+<td>2-3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>UCEIS</td>
+<td>0-1</td>
+<td>2-4</td>
+<td>5-8</td>
+<td>7-8</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-theme="gaia" data-marpit-pagination="10" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Goal #2</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-theme="gaia" data-marpit-pagination="11" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Goal #2: Disease Management Strategy<sup>7</sup></h2>
+<ul>
+<li>Upon diagnosis, must provide patients with education regarding chronicity and need for ongoing therapy</li>
+<li>Aim to induce remission</li>
+<li>Avoidance of long-term exposure to steroid-based treatment regimens</li>
+<li>Aim to maintain remission</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-theme="gaia" data-marpit-pagination="12" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Goal #4</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-theme="gaia" data-marpit-pagination="13" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Goal #4: Monitoring</h2>
+<ul>
+<li>Historically, we assessed based on symptoms only; objective evaluation is a relatively recent paradigm shift</li>
+<li>Objective evaluation includes:
+<ul>
+<li>Non-invasive markers of inflammation: C-reactive protein (CRP) and fecal calprotectin)</li>
+<li>Enterography</li>
+<li>Colonoscopy</li>
+</ul>
+</li>
+<li>Use of *<em>treat-to-target</em>- approach to optimize treatment strategy and achieve remission</li>
+<li>Mucosal healing is a goal of therapy</li>
+<li>Long-term observational studies in Crohn’s disease and ulcerative colitis are still needed to assess the utility of the treat to target strategy</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-theme="gaia" data-marpit-pagination="14" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Goal #5</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-theme="gaia" data-marpit-pagination="15" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Goal #5: Taking Care of the Whole Patient<sup>8</sup></h2>
+<ul>
+<li>Comprehensive care in IBD to address all aspects of disease and health needs</li>
+<li>Disease features warrant expertise beyond the gastroenterologist in order to provide complete care
+<ul>
+<li>Chronic, lifelong illness</li>
+<li>Medical and surgical needs</li>
+<li>Numerous extra-intestinal aspects of disease</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-marpit-scope-5PXp8IF2="" data-paginate="true" data-theme="gaia" data-marpit-pagination="16" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Needs of an Average IBD Patient</h2>
+
+<table>
+<thead>
+<tr>
+<th>1<sup>0</sup> Care</th>
+<th>➔</th>
+<th>Health Maintenence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pediatricians</td>
+<td>➔</td>
+<td>Transition of Care</td>
+</tr>
+<tr>
+<td>Gastroenterology</td>
+<td>➔</td>
+<td>Coordination of Care</td>
+</tr>
+<tr>
+<td> - Dietician/Nutrition</td>
+<td>➔</td>
+<td>Assessment/Management</td>
+</tr>
+<tr>
+<td> - Adcanced Practitioners</td>
+<td>➔</td>
+<td>F/U, Crisis Management</td>
+</tr>
+<tr>
+<td> - Nursing</td>
+<td>➔</td>
+<td>Communications/Support</td>
+</tr>
+<tr>
+<td> - MA/s/Liaisons</td>
+<td>➔</td>
+<td>Scheduling/Authorizations</td>
+</tr>
+<tr>
+<td> - Pharmacy</td>
+<td>➔</td>
+<td>Prescriptions/Infusions</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-marpit-scope-FwWvijBU="" data-paginate="true" data-theme="gaia" data-marpit-pagination="17" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Needs of an Average IBD Patient (Continued)</h2>
+
+<table>
+<thead>
+<tr>
+<th> - Social Work</th>
+<th>➔</th>
+<th>Resource utilization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> - Behavioral Therapy</td>
+<td>➔</td>
+<td>Self Efficay</td>
+</tr>
+<tr>
+<td> - Clinical Research</td>
+<td>➔</td>
+<td>Clinical Trials</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-marpit-scope-d8KrFjT4="" data-paginate="true" data-theme="gaia" data-marpit-pagination="18" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Doctors Involved in the Care of IBD Patients</h2>
+
+<table>
+<thead>
+<tr>
+<th>Hospitalist</th>
+<th>➔</th>
+<th>Inpatient coordination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Surgeon</td>
+<td>➔</td>
+<td>Complications</td>
+</tr>
+<tr>
+<td>Pathology</td>
+<td>➔</td>
+<td>Diagnostics</td>
+</tr>
+<tr>
+<td>Radiology</td>
+<td>➔</td>
+<td>Diagnostic/Intervention</td>
+</tr>
+<tr>
+<td>Specialists</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td> - Hepatology</td>
+<td>➔</td>
+<td>Hepatitis's</td>
+</tr>
+<tr>
+<td> - Ob/Gyne</td>
+<td>➔</td>
+<td>Contraception/Conception</td>
+</tr>
+<tr>
+<td> - Rheumatalogy</td>
+<td>➔</td>
+<td>Joints</td>
+</tr>
+<tr>
+<td> - Endocrine</td>
+<td>➔</td>
+<td>Bones</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-marpit-scope-bAruZTRk="" data-paginate="true" data-theme="gaia" data-marpit-pagination="19" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Doctors Involved in the Care of IBD Patients (Continued)</h2>
+
+<table>
+<thead>
+<tr>
+<th> - Ophthalmology</th>
+<th>➔</th>
+<th>Ocular</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> - Nephrology</td>
+<td>➔</td>
+<td>Stones/Nephropathies</td>
+</tr>
+<tr>
+<td> - Neurology</td>
+<td>➔</td>
+<td>Peripheral/Central nerves</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="20" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h2>Total Care - IBD<sup>9</sup></h2>
+
+<p><img src="d4.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-theme="gaia" data-marpit-pagination="21" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Under One Roof...<sup>10</sup></h2>
+<p>Proposed collaborative care environments:</p>
+<ul>
+<li>Med/surg
+<ul>
+<li>Includes radiologist</li>
+<li>Pouch clinics</li>
+</ul>
+</li>
+<li>Pregnancy/preconception
+<ul>
+<li>Includes MFM specialist</li>
+<li>Addresses fertility, pre-conception, therapy, delivery</li>
+</ul>
+</li>
+<li>Transition of care
+<ul>
+<li>Includes adult/child-centered care providers and support services</li>
+</ul>
+</li>
+<li>Psychosocial care</li>
+<li>Nutrition</li>
+<li>Multidisciplinary conferences</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-theme="gaia" data-marpit-pagination="22" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>What can you do back home?</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-theme="gaia" data-marpit-pagination="23" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Preventive Care in IBD<sup>11</sup></h2>
+<ul>
+<li>For many patients, the gastroenterologist is the only provider</li>
+<li>Data suggest IBD patients do not receive preventive services at the same rate as general medicine patients</li>
+<li>Debate as to who “owns”- healthcare maintenance in IBD patient</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-theme="gaia" data-marpit-pagination="24" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Preventive Care in IBD<sup>12</sup></h2>
+<ul>
+<li>Health maintenance is aimed at prevention and health promotion</li>
+<li>Areas of the focus are highlighted in 2017 ACG preventive care in IBD guideline:
+<ul>
+<li>Vaccinations</li>
+<li>Skin cancer screening</li>
+<li>Cervical cancer screening</li>
+<li>Osteoporosis screening</li>
+<li>Smoking cessation</li>
+<li>Assessment for depression and anxiety</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-theme="gaia" data-marpit-pagination="25" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Remember...</h2>
+<ul>
+<li>Appreciate that “it takes a village” to effectively care for IBD</li>
+<li>Be aware of preventive healthcare needs</li>
+<li>Utilize IBD centers for patients with complex IBD</li>
+<li>Consider available resources/team members to aid in managing patients with IBD</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-theme="gaia" data-marpit-pagination="26" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol>
+<li>Lichtenstein GR et al. Am J Gastroenterol 2018;113(4):481-517.</li>
+<li>Sandborn WJ. Gastroenterology 2014;147(3):702-705.</li>
+<li>Sandborn WJ. Gastroenterology 2014;147(3):702-705.</li>
+<li>Lichtenstein GR et al. Am J Gastroenterol 2018;113(4):481-517.</li>
+<li>Dassapoulos T. Gastroenterology 2015;149(1):238-245.</li>
+<li>Rubin DT et al. Am J Gastroenterol 2019;114(3):384-413.<br />
+Truelove SC, Witts LJ. Br Med J 1955;2:1041-1048.</li>
+<li>Lichtenstein GR et al. Am J Gastroenterol 2018;113(4):481-517.<br />
+Rubin DT et al. Am J Gastroenterol 2019;114:384-413.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-theme="gaia" data-marpit-pagination="27" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="8">
+<li>Lee CK et al.  Am J Gastroenterol 2017;112(6):825-827.<br />
+Calvet X et al. J Crohns Colitis 2014;8(3):240-251.<br />
+Louis E et al. J Crohns Colitis 2015;9(8):685-691.</li>
+<li>Regueiro MD et al. Inflamm Bowel Dis 2016;22(8):1971-1980.</li>
+<li>Lee CK et al. Am J Gastroenterol 2017;112(6):825-827.</li>
+<li>Melmed GY. Inflamm Bowel Dis 2012;18(1):41-42.<br />
+Reich JS et al. Dig Dis Sci 2016;61(8):2205-2216.<br />
+Selby L et al. Dig Dis Sci 2011;56(3):819-824.</li>
+<li>Farraye FA et al. Am J Gastroenterol 2017;112(2):241-258.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-paginate="true" data-theme="gaia" data-marpit-pagination="28" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Use of Medications for the Treatment of Mild to Moderate IBD</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-marpit-scope-PDGWBeRw="" data-paginate="true" data-theme="gaia" data-marpit-pagination="29" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Mild to Moderate IBD: Features <sup>1</sup></h2>
+
+<table>
+<thead>
+<tr>
+<th>Crohn’s Disease</th>
+<th>Ulcerative Colitis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ambulatory</td>
+<td>Ambulatory</td>
+</tr>
+<tr>
+<td>Tolerates PO</td>
+<td>Tolerates PO</td>
+</tr>
+<tr>
+<td>No systemic symptoms</td>
+<td>No systemic symptoms</td>
+</tr>
+<tr>
+<td>Age &gt; 30 years</td>
+<td>Age &gt; 40 years</td>
+</tr>
+<tr>
+<td>Limited ileal disease</td>
+<td>&lt; 4-5 bowel movements / day</td>
+</tr>
+<tr>
+<td>Superficial ulcers</td>
+<td>Limited left-sided disease</td>
+</tr>
+<tr>
+<td>No perianal disease</td>
+<td>Mild endoscopic findings</td>
+</tr>
+<tr>
+<td>No penetrating disease</td>
+<td>No hospitalizations</td>
+</tr>
+<tr>
+<td>No prior surgeries</td>
+<td>No prior C diff or CMV infection</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-paginate="true" data-theme="gaia" data-marpit-pagination="30" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>5 - Aminosalicylates</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-paginate="true" data-theme="gaia" data-marpit-pagination="31" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>5-Aminosalicylates (5-ASAs) <sup>2</sup></h2>
+<ul>
+<li>Modulate inflammatory cytokine production, decrease transcriptional activity of nuclear factor-kappa ß (NF-κ ß), inhibit production of prostaglandin and leukotrienes
+<ul>
+<li>**Work without affecting systemic immune system</li>
+</ul>
+</li>
+<li>Topical contact with inflamed mucosa required; oral and rectal formulations available</li>
+<li>First line for induction and maintenance of mild to moderate ulcerative colitis</li>
+<li>Debated use in Crohn’s disease
+<ul>
+<li>Cochrane analysis noted sulfasalazine is superior to placebo for inducing remission in Crohn’s colitis (45% vs 29%; RR 1.38, 95% CI 1.00 to 1.89) at 17-18 weeks</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-paginate="true" data-theme="gaia" data-marpit-pagination="32" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Rectally Introduced 5-ASAs <sup>3</sup></h2>
+<ul>
+<li>Ideal for treating disease within 50cm from the anus or distal to the splenic flexure</li>
+<li>Superior to topical steroids</li>
+<li>2010 Cochrane review confirmed that topical 5-ASA therapy achieves induction of remission in 67% of patients with mild to moderate disease</li>
+<li>Doses of at least 1g/day are warranted</li>
+<li>Compliance and acceptance of this strategy are integral to its success</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-paginate="true" data-theme="gaia" data-marpit-pagination="33" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Rectally applied 5-ASA Formulations</h2>
+<ul>
+<li>First-line agents for proctitis and left-sided colitis (ulcerative colitis)</li>
+<li>Ideal for management of tenesmus, urgency, rectal pain, incontinence, bleeding, and paradoxical constipation</li>
+</ul>
+<p>10-15cm        40-50cm<br />
+Suppository        Foam<br />
+(mesalamine)        (mesalamine*)</p>
+<p>*Foam formulation is not available in the USA</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-paginate="true" data-theme="gaia" data-marpit-pagination="34" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Oral ASAs <sup>4</sup></h2>
+<ul>
+<li>Systematic review and meta-analysis show efficacy for inducing remission and preventing relapse</li>
+<li>Doses of ≥ 2.0g/day have greater efficacy than lower doses</li>
+<li>Moderate disease had improvements in clinical symptoms and rates of remission with 4.8g vs 2.4g</li>
+<li>All formulations show similar systemic absorption, pharmacokinetics, excretion</li>
+<li>Once daily dosing is comparable to divided dosing</li>
+<li>Decision-making based on clinical response, toxicity, compliance, and cost</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-marpit-scope-zKunpoMA="" data-paginate="true" data-theme="gaia" data-marpit-pagination="35" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Oral 5-ASA Formulations</h2>
+
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Mechanism of Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diffusion–dependent (<strong>mesalamine</strong>, controlled release)</td>
+<td>Time-released, coated in ethylcellulose, and releases starting in upper small bowel</td>
+</tr>
+<tr>
+<td>pH-dependent(mesalamine,delayed release formulations,  multi-matrix system [MMX] mesalamine)</td>
+<td>Coated with acrylate resin and released at pH 6.0-7.0 (distal ileum or proximal colon)</td>
+</tr>
+<tr>
+<td>Colonic flora-dependent; azo-bonded (sulfasalazine, balsalazide, olsalazine)</td>
+<td>3 different types of azo-bonded 5-ASAs, which are cleaved by colonic bacteria when the drug reaches the colon</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-paginate="true" data-theme="gaia" data-marpit-pagination="36" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>5-ASAs: Combined Oral &amp; Topical Approach <sup>5</sup></h2>
+<ul>
+<li>Meta-analysis by Ford et al evaluated oral vs topical vs combined 5-ASA therapy
+<ul>
+<li>Combined 5-ASA therapy was superior to oral 5-ASA alone for induction of remission of mildly to moderately active extensive ulcerative colitis</li>
+<li>Trend toward superiority of topical over oral approach in distal ulcerative colitis</li>
+</ul>
+</li>
+<li>No data on optimal dosing with this approach</li>
+<li>Patients who continue on the same dose from time of initiation maintain remission more frequently than those that dose de-escalate</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-paginate="true" data-theme="gaia" data-marpit-pagination="37" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>5-ASAs: Side Effects</h2>
+<ul>
+<li>Common: headache, hair loss</li>
+<li>Hypersensitivities</li>
+<li>Sulfa moiety in sulfasalazine is responsible for:
+<ul>
+<li>Hemolytic anemia</li>
+<li>Reversible hypospermia, decreased sperm motility</li>
+<li>Allergic phenomena</li>
+<li>Nausea</li>
+</ul>
+</li>
+<li>Monitoring
+<ul>
+<li>Periodic BUN and creatinine, given rare idiosyncratic cases of interstitial nephritis</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-paginate="true" data-theme="gaia" data-marpit-pagination="38" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Corticosteroids</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-paginate="true" data-theme="gaia" data-marpit-pagination="39" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Corticosteroids <sup>6</sup></h2>
+<ul>
+<li>Prevent migration of inflammatory mediators to the GI tract</li>
+<li>Interfere with production of nuclear factor-kappa ß (NF-</li>
+<li>Used to induce remission in both ulcerative colitis and Crohn’s disease</li>
+<li>Parenteral, oral, and rectal formulations</li>
+<li>Budesonide exhibits 90% first-pass metabolism, formulated to treat local activity</li>
+<li>No role for long term maintenance therapy, given side effect profile</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-paginate="true" data-theme="gaia" data-marpit-pagination="40" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Corticosteroids: Oral Use <sup>7</sup></h2>
+<ul>
+<li>Optimum dose unclear; common use prednisone 40mg (0.5-0.75mg/kg/day) for acute symptoms</li>
+<li>Doses of 60mg have moderately more efficacy but at the expense of side effects</li>
+<li>Budesonide MMX induced clinical and endoscopic remission in 17.7% of mild to moderate ulcerative colitis patients vs 6.2% receiving placebo by 8 weeks</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-paginate="true" data-theme="gaia" data-marpit-pagination="41" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Corticosteroids: Oral Use (Continued)</h2>
+<ul>
+<li>Budesonide (enteric coated) 9mg daily is superior to placebo in induction of symptomatic remission in mild to moderate Crohn’s disease</li>
+<li>Standard steroids are more efficacious than budesonide preparations</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-paginate="true" data-theme="gaia" data-marpit-pagination="42" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Corticosteroids: De-escalation <sup>8</sup></h2>
+<ul>
+<li>Have an Exit Strategy! Tapering needs to be considered as soon as steroids are initiated to avoid adverse outcomes</li>
+<li>Appropriate maintenance therapy should be in place</li>
+<li>Once clinical response achieved, doses are tapered by 5–10mg/week until 20mg</li>
+<li>Once at 20mg daily, the taper should be slowed to reduction of  2.5–5mg/week</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-paginate="true" data-theme="gaia" data-marpit-pagination="43" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Corticosteroids: Rectal Use <sup>9</sup></h2>
+<ul>
+<li>Topical steroids are first line for those intolerant to 5-ASA topical preparations</li>
+<li>Best to treat symptoms of tenesmus, urgency, rectal pain, incontinence, and bleeding</li>
+<li>Maybe adjunctive to topical 5-ASA therapy</li>
+<li>Foam and liquid enema preparations</li>
+<li>Meta-analysis of budesonide foam noted that is was superior to placebo for induction of clinical remission in mild to moderate ulcerative colitis</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-marpit-scope-W0T3lzjS="" data-paginate="true" data-theme="gaia" data-marpit-pagination="44" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Corticosteroids: Side Effects</h2>
+<ul>
+<li>Hypertension</li>
+<li>Glucose intolerance</li>
+<li>Dermatologic consequences (striae, acne)</li>
+<li>Infections</li>
+<li>Adrenal suppression</li>
+<li>Weight gain</li>
+<li>Glaucoma</li>
+<li>Bone loss</li>
+<li>Avascular necrosis</li>
+<li>Psychiatric symptoms</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45" data-paginate="true" data-theme="gaia" data-marpit-pagination="45" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Antibiotics</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="46" data-marpit-scope-mGbakKI7="" data-paginate="true" data-theme="gaia" data-marpit-pagination="46" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Antibiotics <sup>10</sup></h2>
+<ul>
+<li>Use investigated due to theory that immune response to flora drives inflammation in Crohn’s disease</li>
+<li>Strategies evaluated include:
+<ul>
+<li><strong>Ciprofloxacin</strong>
+<ul>
+<li>Similar efficacy to mesalamine</li>
+<li>No more effective than placebo for induction of remission</li>
+</ul>
+</li>
+<li><strong>Metronidazole</strong>
+<ul>
+<li>No more effective than placebo</li>
+</ul>
+</li>
+<li><strong>Antimycobacterial agents</strong>
+<ul>
+<li>No more effective than placebo</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="47" data-paginate="true" data-theme="gaia" data-marpit-pagination="47" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Immunomodulators</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="48" data-marpit-scope-E1uS7Ere="" data-paginate="true" data-theme="gaia" data-marpit-pagination="48" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Immunomodulators <sup>11</sup></h2>
+<ul>
+<li>The “original” drugs for steroid-dependent or steroid-refractory patients</li>
+<li>These include:
+<ul>
+<li>**Thiopurines:*- azathioprine (AZA) and 6-mercaptopurine (6-MP)
+<ul>
+<li>Purine antagonists</li>
+<li>Cause DNA damage, cell-cycle arrest, cytotoxicity, and apoptosis</li>
+</ul>
+</li>
+<li><strong>Methotrexate</strong>
+<ul>
+<li>Converted to methotrexate-polyglutamate, which blocks de novo purine synthesis and dihydrofolate reductase, resulting in reduced inflammation and increased apoptosis</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="49" data-marpit-scope-R19zgElN="" data-paginate="true" data-theme="gaia" data-marpit-pagination="49" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Immunomodulators <sup>12</sup></h2>
+<ul>
+<li>Lack of robust data</li>
+<li>Have been used for nearly 40 years for IBD</li>
+<li>Used for maintenance of remission; no role for induction, given delayed onset of activity (~8-12 weeks)</li>
+<li>Thiopurines are used in Crohn’s disease and ulcerative colitis</li>
+<li>AZA use more common as 6-MP does not have IBD-approved indication worldwide</li>
+<li>Small studies support the use of methotrexate in Crohn’s disease</li>
+<li>Based on existing data, currently no recommendation for methotrexate in ulcerative colitis</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="50" data-marpit-scope-md6pcwTf="" data-paginate="true" data-theme="gaia" data-marpit-pagination="50" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Immunomodulators <sup>13</sup></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Azathioprine</th>
+<th>6-Mercaptopurine</th>
+<th>Methotrexate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dosage</td>
+<td>2.0-2.5mg/kg/day</td>
+<td>1.0-1.5mg/kg/day</td>
+<td>15-25mg/week + folic acid (5-10mg/week)</td>
+</tr>
+<tr>
+<td>Route of Administration</td>
+<td>Peroral</td>
+<td>Peroral</td>
+<td>Intramuscular / subcutaneous injection</td>
+</tr>
+<tr>
+<td>Dosing Intervals</td>
+<td>Daily or bid</td>
+<td>Daily or bid</td>
+<td>Once weekly</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="51" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="51" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h2>AZA and 6-MP: Metabolism</h2>
+<p><img src="d5.png" alt="" style="width:1000px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="52" data-marpit-scope-X7jpMnqF="" data-paginate="true" data-theme="gaia" data-marpit-pagination="52" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>AZA and 6-MP: Thiopurine S-Methyltransferase Testing (TPMT) <sup>14</sup></h2>
+<ul>
+<li>Some societies recommend checking TMPT prior to starting an immunomodulator</li>
+<li>Risk of myelosuppression with AZA and 6-MP due to elevated levels of 6-TGN</li>
+<li>Genotype and phenotype testing available
+<ul>
+<li>89% wild type ⮕ normal or high TPMT activity</li>
+<li>10% heterozygous for mutations ⮕ low TPMT activity</li>
+<li>0.3% homozygous for mutations ⮕ negligible TPMT activity</li>
+</ul>
+</li>
+<li>TPMT activity level can vary based on other medication exposure</li>
+<li>Recently discovered *NUDT15 R139C- variation can induced leukopenia in Asians</li>
+<li>Not all mutations are detectable, so CBC and liver enzymes must be followed periodically regardless of TMPT results</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="53" data-marpit-scope-UMvMCkgg="" data-paginate="true" data-theme="gaia" data-marpit-pagination="53" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>AZA and 6-MP: Monitoring <sup>15</sup></h2>
+<ul>
+<li>Baseline CBC and liver enzymes: every other week for 6 to 8 weeks after initiation or following any dose adjustments; at least once every 3 months thereafter</li>
+<li>6-thioguanine (6-TGN) and 6-methylmercaptopurine (6-MMP) levels can be measured: 2013 meta-analysis showed the pooled odds ratio for clinical remission was 3.2 when 6-TGN levels were between 230 and 260 (95% CI 2.4-4.1)</li>
+<li>6-TGN levels &gt;400 picomoles per 8 X 108 erythrocytes predict refractoriness and an increased risk of myelotoxicity</li>
+<li>6-MMP levels &gt;5000 picomoles per 8 X 108 erythrocytes correlates with hepatotoxicity</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="54" data-marpit-scope-Eyicv2xB="" data-paginate="true" data-theme="gaia" data-marpit-pagination="54" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>AZA and 6-MP: Monitoring <sup>16</sup></h2>
+<table>
+<thead>
+<tr>
+<th>Patient Classification</th>
+<th>6-TGN</th>
+<th>6-MMP</th>
+<th>Consequence</th>
+<th>Approach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Non-compliance</td>
+<td>Negligible or undetectable</td>
+<td>Negligible or undetectable</td>
+<td>Inefficacy</td>
+<td>Patient education</td>
+</tr>
+<tr>
+<td>Underdosing</td>
+<td>Low</td>
+<td>Low</td>
+<td>Inefficacy or poor response</td>
+<td>Increase thiopurine dosage</td>
+</tr>
+<tr>
+<td>Thiopurine “resistant”</td>
+<td>Low</td>
+<td>High</td>
+<td>Poor response or hepatotoxicity</td>
+<td>Add allopurinol and decrease thiopurine dosage</td>
+</tr>
+<tr>
+<td>Overdosing</td>
+<td>High</td>
+<td>Low</td>
+<td>Overdosing with risk of myelotoxicity</td>
+<td>Decrease thiopurine dosage and close monitoring</td>
+</tr>
+<tr>
+<td>Thiopurine “refractory”</td>
+<td>High</td>
+<td>High</td>
+<td>Thiopurine refractory or overdose</td>
+<td>Switch to another drug</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="55" data-paginate="true" data-theme="gaia" data-marpit-pagination="55" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>AZA and 6-MP: The “Resistant” Patient <sup>17</sup></h2>
+<ul>
+<li>Characterized by low 6-TGN levels, high 6-MMP levels and often transaminitis</li>
+<li>Allopurinol 100mg daily directs reaction away from 6-MMP towards 6-TGN</li>
+<li>Requires dose reduction of AZA or 6-MP by 25%-50% to avoid myelotoxicity</li>
+<li>Bi-weekly CBCs needed during this adjustment phase</li>
+<li>Metabolite levels reassessed within 2-6 weeks</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="56" data-marpit-scope-Wa3emG0O="" data-paginate="true" data-theme="gaia" data-marpit-pagination="56" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>AZA and 6-MP: Side Effects</h2>
+
+<table>
+<thead>
+<tr>
+<th>Seen early (2-3 weeks)</th>
+<th>Seen later</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Myelosuppression</td>
+<td>Myelosuppression</td>
+</tr>
+<tr>
+<td>Pancreatitis</td>
+<td>Infection</td>
+</tr>
+<tr>
+<td>Hepatitis</td>
+<td>Malignancy</td>
+</tr>
+<tr>
+<td>Polyarthralgias</td>
+<td> - Non melanoma skin cancers</td>
+</tr>
+<tr>
+<td>Fevers</td>
+<td> - Cervical cancer</td>
+</tr>
+<tr>
+<td>Nausea/vomiting</td>
+<td> - Lymphoma</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="57" data-paginate="true" data-theme="gaia" data-marpit-pagination="57" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Methotrexate: Side Effects</h2>
+<ul>
+<li>GI distress: nausea/vomiting*</li>
+<li>Mouth sores*</li>
+<li>Headache*</li>
+<li>Fatigue*</li>
+<li>Myelosuppression</li>
+<li>Hepatitis</li>
+<li>Pulmonary fibrosis</li>
+<li>Infection<br />
+<span style="font-size: 30px;">*Can be reduced or alleviated with folate supplementation</span></li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="58" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;d6.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="58" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="58" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;" data-marpit-advanced-background="content"></section>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="58" data-marpit-pagination-total="168" style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="59" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;d7.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="59" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="59" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;" data-marpit-advanced-background="content"></section>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="59" data-marpit-pagination-total="168" style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="60" data-paginate="true" data-theme="gaia" data-marpit-pagination="60" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol>
+<li>Sandborn WJ. Gastroenterology 2014;147(3):702-705.<br />
+Dassopoulos T et al. Gastroenterology 2015;149(1):238-245.</li>
+<li>Egan LJ et al. J Biol Chem 1999;274(37):26448-26453.<br />
+Wang YJ et al. Cochrane Review DB 2016.<br />
+Hanauer S et al. Cochrane Review 2016.</li>
+<li>Marshall JK et al. Gut 1997; 40(6): 775-781.<br />
+Marshall KJ et al. Cochrane Database Syst Rev 2010;11.<br />
+Marshal JK et al. Cochrane Database Syst Rev 2012;11.<br />
+Rubin DT et al. Am J Gastro 2019;114(3):384-413.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="61" data-paginate="true" data-theme="gaia" data-marpit-pagination="61" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="4">
+<li>Feagan BG et al. Inflamm Bowel Dis 2013;19(9):2031-2040.<br />
+Ford AC et al. Am J Gastroenterol 2011;106(4):601-616.<br />
+Hanauer SB et al. Am J Gastroenterol 2005;100(11):2478-2485.<br />
+Ford AC et al. Am J Gastroenterol 2011;106(12):2070-2077.</li>
+<li>Ford AC et al. Am J Gastroenterol 2012;107(2):167-176.<br />
+Sandborn WJ et al. Am J Gastroenterol 2005;100:S312.</li>
+<li>Goulding NJ et al. Curr Opin Pharmacol 2004;4(6):629-636.<br />
+Ford AC et al. Am J Gastroenterol 2011;106(4):590-599.<br />
+Vavricka SR et al. Drugs 2014;74(3):319-324.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="62" data-paginate="true" data-theme="gaia" data-marpit-pagination="62" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="7">
+<li>Summers RW et al. Gastroenterology 1979;77 (4, pt 2):847-869.<br />
+Baron JH et al. Br Med J 1962;2(5302):441-443.<br />
+Ford AC et al. Am J Gastroenterol 2011;106(4):590-599.<br />
+Sandborn WJ et al. Aliment Pharmacol Ther 2015;41(5):409-418.</li>
+<li>Vavricka SR et al. Drugs 2014;74(3):319-324.</li>
+<li>Seibold F et al. J Crohns Colitis 2014;8(1):56-63.<br />
+Mulder CJ et al. Eur J Gastroenterol Hepatol 1996;8(6):549-553.<br />
+Zeng J et al. J Gastroenterol Hepatol 2017;32(3):558-566.</li>
+<li>Lichtenstein GR et al. Am J Gastro 2018;113(4):481-517.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="63" data-paginate="true" data-theme="gaia" data-marpit-pagination="63" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="11">
+<li>Neurath MF et al. Clin Gastroenterol Hepatol 2005;3(10):1007-1014.<br />
+Goldman ID et al. Pharmacol Ther 1985;28(1):77-102.<br />
+Grim J et al. Clin Pharmacokinet 2003;42(2):139-151.</li>
+<li>Nielsen OH et al. Expert Rev Gastroenterol Hepatol 2015;9(2):177-189.</li>
+<li>Nielsen OH et al. Expert Rev Gastroenterol Hepatol 2015;9(2):177-189.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="64" data-paginate="true" data-theme="gaia" data-marpit-pagination="64" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="14">
+<li>Nielsen OH et al. Expert Rev Gastroenterol Hepatol 2015;9(2):177-189.<br />
+Lennard L et al. Clin Pharmacol Ther 1989;46(2):149-154.<br />
+Gillisen LP et al. Aliment Pharmacol Ther 2005;22(7):605-611.<br />
+Zhu X et al.  J Crohn's Colitis 2016;10:S475.</li>
+<li>Lichtenstein GR et al. Gastroenterology 2006;130(3):935-939.<br />
+Moreau AC et al. Inflamm Bowel Dis 2014;20(3):464-471.<br />
+Dubinsky MC et al. Gastroenterology 2000;118(4):705-713.<br />
+Roblin X et al. Am J Gastroenterol 2008;103(12):3115-3122.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="65" data-paginate="true" data-theme="gaia" data-marpit-pagination="65" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="16">
+<li>Nielsen OH et al. Expert Rev Gastroenterol Hepatol 2015;9(2):177-189.</li>
+<li>Sparrow MP et al. Aliment Pharmacol Ther 2005;22(5):441-446.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="66" data-paginate="true" data-theme="gaia" data-marpit-pagination="66" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Biologic and Small Molecules in the Treatment of IBD</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="67" data-marpit-scope-ZrmYPCKC="" data-paginate="true" data-theme="gaia" data-marpit-pagination="67" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Moderate to Severe IBD: Features<sup>1</sup></h2>
+
+<table>
+<thead>
+<tr>
+<th>Crohn’s Disease</th>
+<th>Ulcerative Colitis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>May require hospitalization</td>
+<td>May require hospitalization</td>
+</tr>
+<tr>
+<td>May have systemic symptoms</td>
+<td>May have systemic symptoms</td>
+</tr>
+<tr>
+<td>Age &lt; 30 years at presentation</td>
+<td>Age &lt; 40 years at presentation</td>
+</tr>
+<tr>
+<td>Disease NOT limited to ileal and right colon</td>
+<td>&gt; 4-5 bowel movements / day</td>
+</tr>
+<tr>
+<td>Deep ulcers</td>
+<td>Extensive disease</td>
+</tr>
+<tr>
+<td>May have perianal disease</td>
+<td>Moderate to severe endoscopic findings</td>
+</tr>
+<tr>
+<td>May have penetrating disease</td>
+<td>Possible prior hospitalizations</td>
+</tr>
+<tr>
+<td>Prior surgeries</td>
+<td>Possible prior *C diff- or CMV infection</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="68" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="68" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h2>Targets of IBD Therapeutics<sup>2</sup></h2>
+<p><img src="d8.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="69" data-paginate="true" data-theme="gaia" data-marpit-pagination="69" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Biologics: Anti-TNF-α Agents</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="70" data-paginate="true" data-theme="gaia" data-marpit-pagination="70" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Anti-Tumor Necrosis Factor-αAgents (Anti-TNFs) <sup>3</sup></h2>
+<ul>
+<li>Blocks TNF-α, a cytokine, which modulates immune reactions as an acute phase reactant as well as impacting cell migration, proliferation, and cell death</li>
+<li>Used in Crohn’s disease and ulcerative colitis for disease refractory to steroids or when unable to achieve steroid sparing with other agents OR to induce remission in those presenting with more severe disease</li>
+<li>Often used in combination with immunomodulators</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="71" data-paginate="true" data-theme="gaia" data-marpit-pagination="71" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Anti-Tumor Necrosis Factor-αAgents (Anti-TNFs) (Continued)</h2>
+<ul>
+<li>Relatively rapid onset of action (within 2 weeks)</li>
+<li>Prior to initiation must assess for risk of latent or active TB and hepatitis B status</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="72" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="72" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h2>Anti-TNFs<sup>4</sup></h2>
+<p><img src="d9.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="73" data-paginate="true" data-theme="gaia" data-marpit-pagination="73" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Infliximab</h2>
+<ul>
+<li>First anti-TNF agent indicated in the treatment of IBD (1998)</li>
+<li>Only FDA-approved agent for fistulizing Crohn’s disease</li>
+<li>Chimeric in nature; mouse/human</li>
+<li>Infusion-based treatment</li>
+<li>Dosing:
+<ul>
+<li>Induction: dose @ 0, 2, and 6 weeks</li>
+<li>Maintenance: every 8 weeks</li>
+<li>Infusion takes ~2 hours</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="74" data-marpit-scope-Lta3OyfJ="" data-paginate="true" data-theme="gaia" data-marpit-pagination="74" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Other Anti-TNFs: Subcutaneous Injectables</h2>
+<table>
+<thead>
+<tr>
+<th>Drug</th>
+<th>Induction Regimen</th>
+<th>Maintenance Regimen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adalimumab</td>
+<td>160mg at 0 weeks<br />80mg  at 2 weeks<br />40mg at 4 weeks</td>
+<td>40mg every 2 weeks</td>
+</tr>
+<tr>
+<td>Golimumab (<strong>ulcerative colitis only</strong>)</td>
+<td>200mg at 0 weeks<br />100mg at 2 weeks</td>
+<td>100mg every 4 weeks</td>
+</tr>
+<tr>
+<td>Certolizumab (<strong>Crohn’s disease only</strong>)</td>
+<td>400mg at 0 weeks<br />400mg at 2 weeks<br />400mg at 4 weeks</td>
+<td>400mg every 4 weeks</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-scope-m2x0jXif="" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="75" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;d10.png&quot;);background-size:600px auto;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="75" data-marpit-scope-m2x0jXif="" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="75" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+<h4>Combination Anti-TNF and Immunomodulator Treatment <sup>5</sup></h4>
+
+<ul>
+<li>Combination therapy is favorable as anti-TNFs are immunogenic</li>
+<li>Results in:
+<ul>
+<li>Reducing anti-drug antibodies</li>
+<li>Boosting anti-TNF drug levels</li>
+</ul>
+</li>
+<li>Data for combination is with anti-TNF medications; mainly infliximab with azathioprine</li>
+<li>SONIC trial noted superiority of infliximab + azathioprine compared to either agent alone to achieve steroid-free remission at 26 weeks in CD; UC SUCCESS noted same finding at 16 weeks in UC</li>
+</ul>
+</section>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-marpit-scope-m2x0jXif="" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="75" data-marpit-pagination-total="168" style="" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="76" data-marpit-scope-GDXtc6tO="" data-paginate="true" data-theme="gaia" data-marpit-pagination="76" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Anti-TNF: Patient Selection</h2>
+<ul>
+<li>Careful patient selection to prevent adverse outcomes is warranted</li>
+<li>Avoid anti-TNFs in patients with:
+<ul>
+<li>Uncontrolled congestive heart failure Class III &amp; IV</li>
+<li>Demyelinating conditions</li>
+<li>Active tuberculosis (TB) infection</li>
+<li>Prior intolerance to anti-TNFs</li>
+</ul>
+</li>
+<li>Caution with anti-TNFs in patients with:
+<ul>
+<li>Prior malignancy</li>
+<li>Increased risk of infection</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="77" data-paginate="true" data-theme="gaia" data-marpit-pagination="77" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Anti-TNF: Safety Profile</h2>
+<ul>
+<li>Infusion/injection site reactions:  4% of infusions</li>
+<li>Serum sickness:  2% of patients</li>
+<li>Serious infections:  2% of patients
+<ul>
+<li>Opportunistic infections:   &lt; 0.5%</li>
+<li>Reactivation of TB</li>
+<li>Reactivation of hepatitis B virus</li>
+</ul>
+</li>
+<li>Drug-induced lupus:   &lt; 0.5% of patients</li>
+<li>Non-Hodgkin’s lymphoma</li>
+<li>Hepatosplenic T-cell lymphoma</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="78" data-paginate="true" data-theme="gaia" data-marpit-pagination="78" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Biologics: Anti-Integrins</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="79" data-paginate="true" data-theme="gaia" data-marpit-pagination="79" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Anti-Integrins: Natalizumab and Vedolizumab<sup>6</sup></h2>
+<ul>
+<li><strong>Natalizumab</strong>
+<ul>
+<li>Humanized monoclonal Ab to α4 integrin subunit</li>
+<li>Non-specific nature of α4 body inhibits lymphocyte trafficking to the CNS</li>
+<li>FDA approved in Crohn’s disease, but use is limited due to risk of progressive multifocal leukoencephalopathy (PML) caused by the JC virus</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="80" data-paginate="true" data-theme="gaia" data-marpit-pagination="80" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Anti-Integrins: Natalizumab and Vedolizumab (Continued)</h2>
+<ul>
+<li><strong>Vedolizumab</strong>
+<ul>
+<li>Humanized monoclonal Ab targeting α4β7 integrin</li>
+<li>Targets the interaction with MAdCAM-1; gut-specific</li>
+<li>No effect on CNS lymphocyte trafficking</li>
+<li>FDA approved for ulcerative colitis and Crohn’s disease in 2014</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="81" data-paginate="true" data-theme="gaia" data-marpit-pagination="81" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Vedolizumab<sup>7</sup></h2>
+<ul>
+<li>Gemini I &amp; II trials evaluated use in UC and CD respectively</li>
+<li>Gemini III was focused on evaluating response to vedolizumab in prior anti-TNF failures</li>
+<li>Approved in moderate to severe IBD in patients with disease that has:
+<ul>
+<li>Failed anti-TNF</li>
+<li>Lost response to anti-TNF</li>
+<li>Demonstrated failure/intolerance/dependence on steroids</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="82" data-paginate="true" data-theme="gaia" data-marpit-pagination="82" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Vedolizumab (Continued)</h2>
+<ul>
+<li>Dosed at 300mg with induction at weeks 0, 2, and 6 and maintenance infusion every 8 weeks; infusion lasts 30 minutes</li>
+<li>May take 10-12 weeks for clinical response</li>
+<li>Prior to initiation, must assess for risk of latent or active TB and hepatitis B status</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="83" data-paginate="true" data-theme="gaia" data-marpit-pagination="83" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Vedolizumab: Safety Profile<sup>8</sup></h2>
+<ul>
+<li>Safety data from all 6 vedolizumab trials pooled ; up to 5 years of exposure
+<ul>
+<li>No increased risk of infections (C diff, TB, and sepsis &lt; 0.6% patients)</li>
+<li>No PML</li>
+<li>&lt; 5% reported infusion reactions</li>
+<li>18 malignancies were diagnosed</li>
+</ul>
+</li>
+<li>Risk / benefit ratio suggests that this drug is favorable for long-term use</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="84" data-paginate="true" data-theme="gaia" data-marpit-pagination="84" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Biologics: Anti-IL 12/23</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="85" data-paginate="true" data-theme="gaia" data-marpit-pagination="85" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Ustekinumab<sup>9</sup></h2>
+<ul>
+<li>Novel mechanism of action: binds to p40 subunit of IL-12 and IL-23</li>
+<li>IL-23 contributes to the development of T-helper-17 cells; effector cells in IBD, reducing the cascade of immune cell activation</li>
+<li>IL-12 and IL-23 also play a role in IBD susceptibility</li>
+<li>Humanized IgG1κ monoclonal antibody</li>
+<li>FDA approved for use in Crohn’s disease in 2016</li>
+<li>Prior to initiation, assess for risk of latent or active TB and hepatitis B status</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="86" data-paginate="true" data-theme="gaia" data-marpit-pagination="86" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Ustekinumab<sup>10</sup></h2>
+<ul>
+<li>UNITI-1 for prior anti-TNF failures / intolerance, UNITI-2 for anti-TNF-naïve patients and IM-UNITI for responders in UNITI-1&amp;2</li>
+<li>Dosing:
+<ul>
+<li>Infusion is based on weight; <strong>single dose:</strong>
+<ul>
+<li>260mg (&lt; 55kg)</li>
+<li>390mg (55-85kg)</li>
+<li>520mg (&gt; 85kg)</li>
+</ul>
+</li>
+<li>Then 90mg injection every 8 weeks</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="87" data-paginate="true" data-theme="gaia" data-marpit-pagination="87" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Ustekinumab: Safety Profil<sup>11</sup></h2>
+<ul>
+<li>Similar rates of adverse effects in placebo and treatment groups in trials</li>
+<li>Most common: nasopharyngitis and upper respiratory tract infection</li>
+<li>Serious infections: diverticulitis, cellulitis, and pneumonia</li>
+<li>Other: headache, arthralgia, sinusitis, back pain, influenza</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="88" data-paginate="true" data-theme="gaia" data-marpit-pagination="88" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Small Molecules vs Biologics</h2>
+<table>
+<thead>
+<tr>
+<th>Small Molecules</th>
+<th>Biologics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small (single molecule)</td>
+<td>Large (mixture)</td>
+</tr>
+<tr>
+<td>Simple well-defined structure</td>
+<td>Complex heterogeneous structure</td>
+</tr>
+<tr>
+<td>Produced by chemical synthesis</td>
+<td>Produced in a living cell culture</td>
+</tr>
+<tr>
+<td>Non-immunogenic</td>
+<td>Immunogenic</td>
+</tr>
+<tr>
+<td>Oral administration</td>
+<td>Parenteral administration</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="89" data-paginate="true" data-theme="gaia" data-marpit-pagination="89" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Small Molecules</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="90" data-paginate="true" data-theme="gaia" data-marpit-pagination="90" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Tofacitinib</h2>
+<ul>
+<li>Inhibits the JAK-STAT pathway, which impacts cytokine production and downstream inflammatory cascade</li>
+<li>*In vivo- directly inhibits JAK1 and JAK3</li>
+<li>Great oral bioavailability</li>
+<li>Quick onset; some patients with response within 3 days</li>
+<li>Short half-life</li>
+<li>FDA approved for ulcerative colitis in May 2018</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="91" data-paginate="true" data-theme="gaia" data-marpit-pagination="91" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Tofacitinib: Trials<sup>12</sup></h2>
+<ul>
+<li>OCTAVE 1 &amp; 2 are similar trials assessing tofacitinib’s ability to induce remission in moderate to severe ulcerative colitis</li>
+<li>OCTAVE sustain trial assessed maintenance in ulcerative colitis</li>
+<li>Anti-TNF-exposed patients responded as well as those who were anti-TNF-naïve</li>
+<li>Taken as a monotherapy</li>
+<li>Dosing at induction is 10mg po bid; response should occur within 8 weeks ➔ reduce to 5mg bid</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="92" data-paginate="true" data-theme="gaia" data-marpit-pagination="92" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Tofacitinib: Monitoring<sup>13</sup></h2>
+<ul>
+<li>Check CBC at baseline, 4-8 weeks after starting, and every 3 months</li>
+<li>Interrupt treatment  if:
+<ul>
+<li>Absolute lymphocyte count &lt; 500 cells/mm<sup>3</sup></li>
+<li>Absolute neutrophil count &lt; 1000 cells/mm<sup>3</sup></li>
+<li>Hemoglobin &lt; 8g/dL or if hemoglobin declines more the 2g/dL on treatment</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="93" data-paginate="true" data-theme="gaia" data-marpit-pagination="93" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Tofacitinib: Monitoring (Continued)</h2>
+<ul>
+<li>Check lipids at 4-8 weeks after starting to evaluate for dose-dependent changes in lipid profile</li>
+<li>Routine monitoring of liver enzymes</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="94" data-paginate="true" data-theme="gaia" data-marpit-pagination="94" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Tofacitinib: Safety Profile<sup>14</sup></h2>
+<ul>
+<li>Infection risk
+<ul>
+<li>UTI or nasopharyngitis are most common</li>
+<li>Increased risk of herpes zoster; recommend Shingrix to all patients (regardless of age) prior to initiating tofacitinib</li>
+</ul>
+</li>
+<li>Cardiovascular events seen in those with underlying cardiovascular disease</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="95" data-paginate="true" data-theme="gaia" data-marpit-pagination="95" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Tofacitinib: Safety Profile (Continued)</h2>
+<ul>
+<li>Pulmonary embolism: seen in rheumatoid arthritis patients with underlying cardiovascular disease; resulted in new FDA restrictions in July 2019
+<ul>
+<li>Use in patients who have failed anti-TNF treatment</li>
+<li>Caution with prior thrombosis</li>
+<li>Dose reduce to 5mg bid after 8 weeks of therapy</li>
+</ul>
+</li>
+<li>Gastrointestinal perforation</li>
+<li>Unclear safety profile for pregnancy as of yet</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="96" data-marpit-scope-PGo1xrHg="" data-paginate="true" data-theme="gaia" data-marpit-pagination="96" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Moderate to Severe IBD: Therapy Considerations</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Adalimumab</th>
+<th>Infliximab</th>
+<th>Vedolizumab</th>
+<th>Tofacitinib</th>
+<th>Ustekinumab</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Severe Disease</td>
+<td>++</td>
+<td>+++</td>
+<td>++</td>
+<td>+++</td>
+<td>++</td>
+</tr>
+<tr>
+<td>TNF Failure</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>++</td>
+<td>Required</td>
+<td>+++</td>
+</tr>
+<tr>
+<td>Onset of Action</td>
+<td>++</td>
+<td>+++</td>
+<td>++ (naïve)</td>
+<td>+++</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Immunogenic</td>
+<td>+++</td>
+<td>+++</td>
+<td>++</td>
+<td>N/A</td>
+<td>++</td>
+</tr>
+<tr>
+<td>Comorbidities</td>
+<td>++</td>
+<td>++</td>
+<td>+++</td>
+<td>++</td>
+<td>+++</td>
+</tr>
+<tr>
+<td>Elderly</td>
+<td>++</td>
+<td>++</td>
+<td>+++</td>
+<td>++</td>
+<td>+++</td>
+</tr>
+<tr>
+<td>Pregnancy</td>
+<td>++</td>
+<td>++</td>
+<td>++</td>
+<td>?</td>
+<td>++</td>
+</tr>
+<tr>
+<td>EIMs</td>
+<td>+++</td>
+<td>+++</td>
+<td>++</td>
+<td>+++</td>
+<td>+++</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="97" data-paginate="true" data-theme="gaia" data-marpit-pagination="97" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol>
+<li>Sandborn WJ. Gastroenterology 2014;147(3):702-705.<br />
+Dassopoulos T et al. Gastroenterology 2015;149(1):238-245.</li>
+<li>Weisshof R, Rubin DT et al. Adv Ther  2018;35: 1764-1762.<br />
+Coskun M et al. Trends Pharmacol Sci 2017;38: 127-142.</li>
+<li>Wang YJ et al. Cochrane Review DB 2016.<br />
+Lichtenstein GR et al. Am J Gastroenterol. 2018;113(4):481-517.<br />
+Rubin DT et al. Am J Gastroenterol. 2019;114(3):384-413.</li>
+<li>Levin AD et al.  J Crohns Colitis 2016;10(8):989–999.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="98" data-paginate="true" data-theme="gaia" data-marpit-pagination="98" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="5">
+<li>Colombel JF et al. N Engl J Med 2010;362:1383-1395.<br />
+Panaccione R et al.  Gastro 2014; 146:392-400.</li>
+<li>Sandborn WJ et al. N Engl J Med 2005;353(18):1912-1925.<br />
+Milch C et al. J Neuroimmunol 2013;264(1-2):123-126.</li>
+<li>Feagin B et al. N Engl J Med 2013;369(8):699-710.<br />
+Sandborn WJ et al.  N Engl J Med 2013;369:711-721.<br />
+Sands B et al. Gastroenterology 2014;147(3):618-627.</li>
+<li>Columbel JF et al. Gut 2017;66(5):839-851.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="99" data-paginate="true" data-theme="gaia" data-marpit-pagination="99" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="9">
+<li>Stelara (ustekinumab) for subcutaneous use. Horsham, PA: Janssen Biotech, March 2014<br />
+(package insert). Accessed August 2019.<br />
+Feagan B et al. N Engl J Med 2016;375(20):1946-1960.</li>
+<li>Feagan  B et al. N Engl J Med 2016;375(20):1946-1960.</li>
+<li>Papp KA et al.  Br J Dermatol 2013;168(4):844-854.<br />
+Sandborn et al. N Engl J Med 2012;367(16):1519-1528.<br />
+Feagan B et al.  N Engl J Med 2016;375(20):1946-1960.</li>
+<li>Sandborn WJ et al. N Engl J Med 2017;376(18):1723-173.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="100" data-paginate="true" data-theme="gaia" data-marpit-pagination="100" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="13">
+<li><a href="https://www.pfizermedicalinformation.com/en-us/xeljanz%20accessed%20August%2019">https://www.pfizermedicalinformation.com/en-us/xeljanz%20accessed%20August%2019</a></li>
+<li><a href="https://www.pfizermedicalinformation.com/en-us/xeljanz%20accessed%20August%2019">https://www.pfizermedicalinformation.com/en-us/xeljanz%20accessed%20August%2019</a></li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="101" data-paginate="true" data-theme="gaia" data-marpit-pagination="101" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Management of Loss of Response to IBD Therapies</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="102" data-paginate="true" data-theme="gaia" data-marpit-pagination="102" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Why Is This Topic Important?<sup>1</sup></h2>
+<ul>
+<li>Since IBD is a chronic, inflammatory disease, it’s important to monitor patients to ensure continued response to therapeutic strategy over time</li>
+<li>If symptoms recur, must confirm symptoms reported are truly related to underlying persistent inflammation</li>
+<li>Other etiologies that can have similar symptoms to IBD won’t respond to IBD treatments!</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="103" data-paginate="true" data-theme="gaia" data-marpit-pagination="103" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Non-IBD Causes of Diarrhea (in the IBD Patient)</h2>
+<ul>
+<li>Non-compliance</li>
+<li>C. difficile
+<ul>
+<li>Previous antibiotic use is not required to develop this infection</li>
+<li>Usually no pseudomembranes</li>
+<li>Higher morbidity and mortality rates</li>
+<li>Increased colectomy rate as high as 20%</li>
+</ul>
+</li>
+<li>Neoplasm</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="104" data-paginate="true" data-theme="gaia" data-marpit-pagination="104" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Non-IBD Causes of Diarrhea (in the IBD Patient)</h2>
+<ul>
+<li>Medications  (NSAIDs, antibiotics)</li>
+<li>Small intestinal bacterial overgrowth
+<ul>
+<li>Can be seen in 25% of patients with Crohn’s disease</li>
+<li>Risk factors: longer duration of disease, fibrostenotic disease, colonic involvement, previous/multiple surgical procedures</li>
+</ul>
+</li>
+<li>Bile-salt diarrhea
+<ul>
+<li>Most commonly seen with ileal resection</li>
+</ul>
+</li>
+<li>Overlapping Irritable Bowel Syndrome</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="105" data-paginate="true" data-theme="gaia" data-marpit-pagination="105" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>How to Assess the Patient with Loss of Response</h2>
+<ul>
+<li>Detailed history on behaviors:
+<ul>
+<li>smoking cessation in UC</li>
+<li>New meds</li>
+<li>Dietary indiscretion</li>
+</ul>
+</li>
+<li>Stool studies to rule out infection</li>
+<li>Bloodwork including CRP level</li>
+<li>Fecal calprotectin level</li>
+<li>Colonoscopy and or cross-sectional imaging</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="106" data-paginate="true" data-theme="gaia" data-marpit-pagination="106" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Loss of Response When Nothing Else Is to Blame...</h2>
+<p><em>Maybe the medication regimen is the problem?!</em></p>
+<ul>
+<li>Drug monitoring has been used for years; initially with the immunomodulator medications</li>
+<li>Drug monitoring with biologics is utilized more frequently today; the most data are available for infliximab (our oldest biologic medication)</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="107" data-paginate="true" data-theme="gaia" data-marpit-pagination="107" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Why Is This TDM Important?<sup>2</sup></h2>
+<ul>
+<li>Biologics are very effective for moderate to severe IBD.</li>
+<li>Nevertheless:
+<ul>
+<li>10%-30% of patients have primary non-response (total lack of clinical response to induction doses)</li>
+<li>Up to 50% of patients who initially respond have a secondary loss of response or serious adverse event</li>
+<li>Most data on this topic exist for anti-TNF medications</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="108" data-marpit-scope-PwUOYU6u="" data-paginate="true" data-theme="gaia" data-marpit-pagination="108" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Pharmacokinetics of Anti-TNF Agents<sup>3</sup></h2>
+<table>
+<thead>
+<tr>
+<th>Low albumin</th>
+<th>Increased clearance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CRP level</td>
+<td>Higher CRP = increased clearance</td>
+</tr>
+<tr>
+<td>Body mass index (BMI)</td>
+<td>Higher BMI = increased clearance</td>
+</tr>
+<tr>
+<td>Male sex</td>
+<td>Increased clearance</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="109" data-paginate="true" data-theme="gaia" data-marpit-pagination="109" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Therapeutic Drug Monitoring<sup>4</sup></h2>
+<ul>
+<li>Measures serum drug concentration and anti-drug antibodies</li>
+<li>Can be used to optimize biologic therapy and improve therapeutic decision making
+<ul>
+<li>Optimal serum drug concentrations are associated with favorable outcomes in *<em>retrospective</em>- analyses</li>
+<li>Low or undetectable drug concentrations are linked to anti-drug antibody formation and subsequent treatment failure</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="110" data-marpit-fragments="1" data-paginate="true" data-theme="gaia" data-marpit-pagination="110" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Therapeutic Drug Monitoring (Continued)</h1>
+<ul>
+<li data-marpit-fragment="1">
+<ul>
+<li>Drug concentrations can be directly compared between the different assays (eg, Enzyme-linked immunosorbent assay [ELISA], radio-immunoassay, homogenous mobility shift assay [HMSA]), and electrochemiluminescence immunoassay [ECLIA] for infliximab). Antibody levels cannot be compared directly.</li>
+<li>Assay choice based on cost, local availability, insurance &amp; provider preference</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="111" data-paginate="true" data-theme="gaia" data-marpit-pagination="111" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Optimal Trough Concentrations<sup>5</sup></h2>
+<ul>
+<li>Infliximab
+<ul>
+<li>Level of &gt; 5mcg/mL is the *<em>suggested</em>- trough level</li>
+<li>Many will dose-optimize patients to a level of &gt; 10mcg/mL before discontinuing therapy and trying an alternate agent</li>
+<li>In perianal Crohn’s disease, higher trough levels ( ~20mcg/mL) were associated with increased fistula healing</li>
+<li>Antibodies to infliximab (ATI) &gt; 9.1U/mL during loss of remission associated with a LR of 3.6 for an unsuccessful intervention to overcome them</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="112" data-paginate="true" data-theme="gaia" data-marpit-pagination="112" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Optimal Trough Concentrations (Continued)</h2>
+<ul>
+<li>Adalimumab
+<ul>
+<li>Level of &gt;7.5mcg/mL is the *<em>suggested</em>- trough level when conducting TDM</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="113" data-paginate="true" data-theme="gaia" data-marpit-pagination="113" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Loss of Response Mechanisms<sup>6</sup></h2>
+<p>Primary and secondary loss of response can be divided into:</p>
+<ul>
+<li>**Mechanistic pharmacodynamic failure:*- optimal drug trough with failure to respond</li>
+<li>**Non-immune-mediated pharmacokinetic failure:*- low drug trough with absence of antibodies</li>
+<li>**Immune-mediated pharmacokinetic failure:*- low drug trough with either low or high antibodies</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="114" data-paginate="true" data-theme="gaia" data-marpit-pagination="114" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Types of Therapeutic Drug Monitoring</h2>
+<ul>
+<li>Reactive TDM
+<ul>
+<li>When symptoms worsen</li>
+<li>Improves clinical care</li>
+<li>Cost-effective</li>
+</ul>
+</li>
+<li>Proactive TDM
+<ul>
+<li>During induction or maintenance</li>
+<li>Withdrawing therapy</li>
+<li>Data (mainly retrospective) show improved outcomes</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="115" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="115" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<p><img src="d11.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="116" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="116" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<p><img src="d12.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="117" data-paginate="true" data-theme="gaia" data-marpit-pagination="117" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol>
+<li>Papamichael K et al. Inflamm Bowel Dis 2015;21(1):182-197.</li>
+<li>Papamichael K et al. Inflamm Bowel Dis 2015;21(1):182-197.</li>
+<li>Ordas I et al. Clin Pharmacol Ther 2012;91(4):635-646.</li>
+<li>Papamichael K and Cheifetz A.  Frontline Gastroenterol 2016;7(4): 289-300.</li>
+<li>Feuerstein JD et al. Gastroenterology 2017;153:827-834.<br />
+Casteele NV et al. Am J Gastroenterol 2013;108:962-971.<br />
+Yarur A et al. Aliment Pharmacol Ther 2017;45(7):933-940.</li>
+<li>Vande Casteele N et al. Gastroenterology 2017;153:835-857 e6.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="118" data-paginate="true" data-theme="gaia" data-marpit-pagination="118" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Pregnancy and the Patient with IBD</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="119" data-marpit-scope-B4juQcPA="" data-paginate="true" data-theme="gaia" data-marpit-pagination="119" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Why Is This Topic Important?<sup>1</sup></h2>
+<ul>
+<li>Most patients are diagnosed with IBD between ages 20-40 years, which coincides with childbearing years</li>
+<li>IBD affects men and women equally</li>
+<li>Multidisciplinary care is warranted to achieve the best outcomes</li>
+<li>Many providers and patients are fearful of treatment during pregnancy and lactation</li>
+<li>Worsening disease activity is the greatest predictor of poor pregnancy outcomes for an patient with IBD</li>
+<li>Little evidence for many recommendations, since pregnant women are excluded from trials</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="120" data-paginate="true" data-theme="gaia" data-marpit-pagination="120" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Known Risks for the Pregnant Patient with IBD</h2>
+<ul>
+<li>Miscarriage</li>
+<li>Growth retardation</li>
+<li>Premature delivery</li>
+<li>Delivery complications</li>
+<li>Disease exacerbation</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="121" data-paginate="true" data-theme="gaia" data-marpit-pagination="121" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Planning and the Care Team</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="122" data-paginate="true" data-theme="gaia" data-marpit-pagination="122" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Preconception Planning<sup>2</sup></h2>
+<ul>
+<li>Ideal for individuals to be in remission 3-6 months prior to conception to increase likelihood of quiescence during pregnancy and in postpartum period</li>
+<li>Preconception visit is ideal to assess:<br />
+– Disease state<br />
+– Therapy plan<br />
+– Nutritional status<br />
+– Smoking cessation<br />
+– Body weight</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="123" data-marpit-scope-W6DkOuyO="" data-paginate="true" data-theme="gaia" data-marpit-pagination="123" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Preconception Planning<sup>3</sup></h2>
+<ul>
+<li>Contraception: long-acting, reversible, and non-hormonal<br />
+– Mindful of venous thromboembolism risk<br />
+– Consider reduced efficacy of oral contraceptive pills with small bowel disease / resection</li>
+<li>Fertility rates in IBD are equivalent to non-IBD patients</li>
+<li>Patients with prior surgery including ileal pouch-anal anastomosis, ostomies, and proctectomy exhibit reduced fertility rates due to inflammation and fallopian tube scarring</li>
+<li>Active inflammation may also reduce fertility</li>
+<li>Increase in voluntary childlessness compared to non-IBD patients</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="124" data-paginate="true" data-theme="gaia" data-marpit-pagination="124" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Ideal Care Team Roster<sup>4</sup></h2>
+<p>The captains:</p>
+<ol>
+<li>Gastroenterologist with IBD expertise</li>
+<li>Maternal-fetal medicine specialist</li>
+</ol>
+<p>Access to, as needed:</p>
+<ol>
+<li>Colorectal surgeon</li>
+<li>Nutritionist</li>
+<li>Lactation consultant</li>
+</ol>
+<p><strong>With knowledge and understanding of principles for managing IBD during pregnancy, you can manage these patients, too!</strong></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="125" data-paginate="true" data-theme="gaia" data-marpit-pagination="125" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Disease Management</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="126" data-paginate="true" data-theme="gaia" data-marpit-pagination="126" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Healthcare Maintenance<sup>5</sup></h2>
+<ul>
+<li>Use of prenatal vitamins is recommended, start early</li>
+<li>Iron may cause constipation can be managed with most over-the-counter preparations</li>
+<li>Inadequate gestational weight gain has been tied to increased risk for small-for-gestational age infants born to mothers with IBD</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="127" data-paginate="true" data-theme="gaia" data-marpit-pagination="127" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Medication Options: What Not To Use!<sup>6</sup></h2>
+<ul>
+<li>Steroids for maintenance<br />
+– Best for patients to be in remission off steroids for 3 months before conception<br />
+– May increase the risk of gestational diabetes, preterm birth, and low birthweight</li>
+<li>Methotrexate must be held 3 months before conception, given known teratogenecity</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="128" data-paginate="true" data-theme="gaia" data-marpit-pagination="128" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Medication Options: What Not To Use! (Continued)</h2>
+<ul>
+<li>Limited data for use of tofacitinib during pregnancy; 11 maternal exposures in the &gt;1100 patients in the ulcerative colitis trials; most common outcome was healthy newborn</li>
+<li>Animal studies with tofacitinib have demonstrated fetal malformation at high doses; encouraged to avoid during the first trimester</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="129" data-paginate="true" data-theme="gaia" data-marpit-pagination="129" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Medication Options: What Not To Use!</h2>
+<ul>
+<li>Steroids for maintenance<br />
+– Best for patients to be in remission off steroids for 3 months before conception<br />
+– May increase the risk of gestational diabetes, preterm birth, and low birthweight</li>
+<li>Methotrexate must be held 3 months before conception, given known teratogenecity</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="130" data-paginate="true" data-theme="gaia" data-marpit-pagination="130" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Medication Options: What Not To Use!</h2>
+<ul>
+<li>Limited data for use of tofacitinib during pregnancy; 11 maternal exposures in the &gt;1100 patients in the ulcerative colitis trials; most common outcome was healthy newborn</li>
+<li>Animal studies with tofacitinib have demonstrated fetal malformation at high doses; encouraged to avoid during the first trimester</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="131" data-paginate="true" data-theme="gaia" data-marpit-pagination="131" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Medical Therapy<sup>7</sup></h2>
+<ul>
+<li>5-ASA agents (oral and topical) may be continued throughout pregnancy<br />
+– All preparations are currently phthalate free</li>
+<li>Thiopurine monotherapy can be continued<br />
+– Increased renal clearance may lower levels<br />
+– Initiation during pregnancy is not recommended</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="132" data-paginate="true" data-theme="gaia" data-marpit-pagination="132" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Medical Therapy (Continued)</h2>
+<ul>
+<li>Steroids can be used as needed for flares</li>
+<li>Biologics can be continued with last dose timed during third trimester, ideally to deliver during trough</li>
+<li>Combination therapy is discouraged if possible, due to concern of infection risk</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="133" data-marpit-scope-U7dSQXoY="" data-paginate="true" data-theme="gaia" data-marpit-pagination="133" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Medical Therapy: Biologics<sup>8</sup></h2>
+<table>
+<thead>
+<tr>
+<th>Drug</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Infliximab</td>
+<td>Last infusion 6-10 weeks before delivery; resume postpartum</td>
+</tr>
+<tr>
+<td>Adalimumab</td>
+<td>Last injection 2-3 weeks before delivery; resume postpartum</td>
+</tr>
+<tr>
+<td>Certolizumab</td>
+<td>Continue uninterrupted</td>
+</tr>
+<tr>
+<td>Golimumab</td>
+<td>Last injection 4-6 weeks before delivery; resume postpartum</td>
+</tr>
+<tr>
+<td>Vedolizumab</td>
+<td>Last infusion 6-10 weeks before delivery; resume postpartum</td>
+</tr>
+<tr>
+<td>Ustekinumab</td>
+<td>Last infusion 6-10 weeks before delivery; resume postpartum</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Can resume biologics 24 hours after vaginal delivery and 48 hours after C-section</strong></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="134" data-paginate="true" data-theme="gaia" data-marpit-pagination="134" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Disease Activity in Pregnancy: Assessment<sup>9</sup></h2>
+<ul>
+<li>1/3 of patients will flare during their pregnancy</li>
+<li>Quiescence at the time of conception helps protect again flares</li>
+<li>Assessment of disease with endoscopy or imaging can be considered if findings will alter management</li>
+<li>Lab alterations may be seen in pregnancy including:<br />
+– Anemia<br />
+– Reduced albumin<br />
+– Elevated alk phos</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="135" data-paginate="true" data-theme="gaia" data-marpit-pagination="135" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Disease Activity in Pregnancy<sup>10</sup></h2>
+<ul>
+<li>Flexible sigmoidoscopy can be performed (unsedated and unprepped) any time during gestation</li>
+<li>Colonoscopy after 24 weeks’ gestation may put the patient and pregnancy at risk</li>
+<li>Gadolinium should be avoided in pregnancy</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="136" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="136" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h2>Active Disease<sup>11</sup></h2>
+<p><img src="d13.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="137" data-marpit-scope-PuaS6gRR="" data-paginate="true" data-theme="gaia" data-marpit-pagination="137" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Perianal Disease in Pregnancy<sup>11</sup></h2>
+<ul>
+<li>Active perianal disease can be treated with standard of care measures</li>
+<li>Active disease (fistulas, fissures, stenosis) increase the risk of a 4th<br />
+degree tear 10x</li>
+<li>Thorough perianal exam during 3rd trimester can help determine the best mode of delivery</li>
+<li>Cesarean section is recommend for:<br />
+– Prior rectovaginal fistula<br />
+– Active perianal disease at the time of delivery<br />
+– Special consideration for those with IPAA given need to preserve anal sphincter</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="138" data-paginate="true" data-theme="gaia" data-marpit-pagination="138" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>After Delivery</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="139" data-paginate="true" data-theme="gaia" data-marpit-pagination="139" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Postpartum Needs: Thromboembolic Risk<sup>12</sup></h2>
+<ul>
+<li>IBD patients are at an increased risk for venous thromboembolism, as are pregnant women</li>
+<li>Mechanical prophylaxis and early ambulation are needed for all IBD patients after delivery</li>
+<li>Patients with C-section should be treated with prophylactic anticoagulation after surgery; course may extend up to 3-6 weeks postpartum</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="140" data-paginate="true" data-theme="gaia" data-marpit-pagination="140" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Postpartum Needs: Pain Management<sup>13</sup></h2>
+<ul>
+<li>Short courses of opioids can be used</li>
+<li>Avoidance of codeine and tramadol</li>
+<li>Avoidance of NSAIDs, if possible</li>
+<li>Consideration of constipation and ileus, caused by pain medications</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="141" data-paginate="true" data-theme="gaia" data-marpit-pagination="141" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Recommendations for the Newborn<sup>14</sup></h2>
+<ul>
+<li>Vaccines should be given on schedule</li>
+<li>Any baby exposed to a biologic during the third trimester should NOT be given live vaccines in the first 6 months of life</li>
+<li>Rotavirus delivery is the only impacted vaccine</li>
+<li>Live vaccines indicated at age 1 year (MMR, Varicella) can be given to breastfed babies of mothers taking biologics</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="142" data-marpit-scope-VoYHjQlu="" data-paginate="true" data-theme="gaia" data-marpit-pagination="142" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Resources</h2>
+<table>
+<thead>
+<tr>
+<th>For Providers</th>
+<th>For Patients</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.gastrojournal.org/article/S0016-5085(18)35437-4/fulltext">Inflammatory Bowel Disease (IBD) in Pregnancy Clinical Care Pathway: A Report from the American Gastroenterological Association IBD Parenthood Project Working Group</a></td>
+<td>First standardized work flow for providers treating IBD patients through family planning</td>
+</tr>
+<tr>
+<td>First standardized work flow for providers treating IBD patients through family planning</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="143" data-paginate="true" data-theme="gaia" data-marpit-pagination="143" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol>
+<li>Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.</li>
+<li>Pedersen N et al. Aliment Pharmacol Ther 2013;38(5):501-512.<br />
+Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.</li>
+<li>Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.<br />
+Rajaratnam SG et al. Int J Colorectal Dis 2011;26(11):1365-1374.<br />
+Wikland M et al. Int J Colorectal Dis 1990;5(1):49-52.</li>
+<li>Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.</li>
+<li>Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.<br />
+Bengtson MB et al. Inflamm Bowel Dis 2017; 23(7):1225-1233.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="144" data-paginate="true" data-theme="gaia" data-marpit-pagination="144" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="6">
+<li>Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.<br />
+Mahadaven U et al. Inflamm Bowel Dis 2018;24(12):2494-2500.</li>
+<li>Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.</li>
+<li>Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.</li>
+<li>Caprilli R et al. Gut 2006;55(Supp 1):i36-i58.<br />
+Abhyankar A et al. Aliment Pharmacol Ther 2013;38(5):460-466.<br />
+Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.</li>
+<li>Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="145" data-paginate="true" data-theme="gaia" data-marpit-pagination="145" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="11">
+<li>Copyright © 2016 AGA Institute.<br />
+Nguyen GC et al. Gastroenterology 2016;150(3):734-757.</li>
+<li>Nguyen GC et al. Gastroenterology 2016;150(3):734-757.<br />
+Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.</li>
+<li>Nguyen GC et al. Gastroenterology 2014;146(3):835-848.</li>
+<li>ACOG Committee Opinion No. 742. Obstet Gynecol 2018;132(1):e35-e43.</li>
+<li>Mahadaven U et al. Gastroenterology 2019;156(5):1508-1524.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="146" data-paginate="true" data-theme="gaia" data-marpit-pagination="146" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Surgical Considerations in IBD</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="147" data-paginate="true" data-theme="gaia" data-marpit-pagination="147" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Surgery does NOT represent a medical failure, rather it is one of the treatment options.</h2>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="148" data-paginate="true" data-theme="gaia" data-marpit-pagination="148" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Risk of Requiring Surgery for IBD Management<sup>1</sup></h2>
+<p><strong>Crohn’s disease</strong></p>
+<ul>
+<li>1 year: 16.3%</li>
+<li>5 years: 33.3%</li>
+<li>10 years: 46.6%</li>
+<li>Cumulative: up to 70%-90% in some reports<br />
+<strong>Ulcerative colitis</strong></li>
+<li>Cumulative risk of surgery over 25%</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="149" data-paginate="true" data-theme="gaia" data-marpit-pagination="149" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Crohn’s Disease Surgeries</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="150" data-paginate="true" data-theme="gaia" data-marpit-pagination="150" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Indications for Surgery<sup>2</sup></h2>
+<ul>
+<li>Persisting or recurrent obstruction</li>
+<li>Abscess</li>
+<li>Cancer</li>
+<li>Hemorrhage</li>
+<li>Bowel perforation</li>
+<li>Poor quality of life</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="151" data-paginate="true" data-theme="gaia" data-marpit-pagination="151" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Crohn’s Disease Surgery<sup>3</sup></h2>
+<ul>
+<li>Most common indication is for fibrostenotic disease segment</li>
+<li>Second most common indication is penetrating disease resulting in abscess or phlegmon usually in:<br />
+— Presence of fistula<br />
+— Presence of sinus</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="152" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="152" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h2>Stricturing Disease<sup>4</sup></h2>
+<ul>
+<li>Approximately 19%-38% of patients with Crohn’s disease have stricturing or penetrating disease at the time of diagnosis</li>
+<li>61%-88% will develop stricturing or penetrating disease after 20 years of disease</li>
+</ul>
+<p><img src="d14.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="153" data-paginate="true" data-theme="gaia" data-marpit-pagination="153" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Considerations for Surgery in Stricturing Crohn’s Disease</h2>
+<ul>
+<li>Long stricture (&gt; 4cm)</li>
+<li>Multiple strictures</li>
+<li>Strictures with associated abscesses or fistulae</li>
+<li>Suspicion of cancer as cause of blockage</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="154" data-paginate="true" data-theme="gaia" data-marpit-pagination="154" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Considerations for Surgery in Stricturing Crohn’s Disease (Continued)</h2>
+<ul>
+<li>Surgical options:<br />
+— Resection<br />
+— Stricturoplasty
+<ul>
+<li>“Bowel-sparing” as it does not result in resection, but rather in reconfiguring the bowel to relieve a physical obstruction</li>
+<li>Technique and reconfiguration depend on the length of the stricture and number of strictures to managed</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="155" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="155" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h2>Fistulas and Abscesses in Crohn’s Disease</h2>
+<p><img src="d15.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="156" data-marpit-scope-wnlNMPoi="" data-paginate="true" data-theme="gaia" data-marpit-pagination="156" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Management of Abscesses in Crohn’s Disease<sup>5</sup></h2>
+<ul>
+<li>Surgery is not always indicated</li>
+<li>Antibiotics should always be given
+<ul>
+<li>Abscesses &lt; 3cm may be treated with antibiotics alone</li>
+</ul>
+</li>
+<li>If possible, abscesses should be drained by interventional radiology</li>
+<li>Once abscess is drained biologics can be initiated</li>
+<li>Most patients who develop an abscess will need to undergo (delayed) resection</li>
+<li>Untreated abscess and phlegmon prior to surgery are associated with sepsis, leaks, and mortality postoperatively</li>
+<li>Long-term abscess resolution without surgery is unlikely (OR 3.44)</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="157" data-paginate="true" data-theme="gaia" data-marpit-pagination="157" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Perianal Fistulas and Abscesses<sup>6</sup></h2>
+<ul>
+<li>Seen in approximately 25%-33% of patients with Crohn’s disease; most common fistula site</li>
+<li>Best evaluated with MRI of the pelvis</li>
+<li>Combined medical and surgical approach improves outcomes</li>
+<li>Exam under anesthesia with seton placement in the setting of abscesses, followed by initiation of anti-TNF medications</li>
+<li>Diverting colostomy in refractory cases</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="158" data-paginate="true" data-theme="gaia" data-marpit-pagination="158" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Crohn’s Disease and Colorectal Cancer<sup>7</sup></h2>
+<ul>
+<li>Increased risk of colon cancer in Crohn’s disease, based on time since Crohn’s disease diagnosis and extent of disease</li>
+<li>Relative risk is 2.5 in CD and 5.6 in colonic CD</li>
+<li>Surveillance is recommended after 8 years of disease if &gt; 30% of the colon is involved</li>
+<li>Slight increased risk of small intestinal cancer in Crohn’s disease with small intestinal involvement<br />
+– 0.5/1000 person-years after 8 years<br />
+– No surveillance recommended for this group</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="159" data-paginate="true" data-theme="gaia" data-marpit-pagination="159" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>Ulcerative Colitis Surgeries</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="160" data-paginate="true" data-theme="gaia" data-marpit-pagination="160" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Indications for Surgery in Ulcerative Colitis</h2>
+<ul>
+<li>Acute severe ulcerative colitis (ASUC) — Toxic megacolon<br />
+— Perforation<br />
+— Massive bleeding<br />
+— Refractory to or intolerant of medical therapies</li>
+<li>Cancer</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="161" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="161" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h2>Toxic Megacolon</h2>
+<p><img src="d16.png" alt="" style="width:1100px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="162" data-paginate="true" data-theme="gaia" data-marpit-pagination="162" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Toxic Megacolon</h2>
+<p>But...<br />
+<strong>Don’t have to have radiologic evidence to have toxic megacolon or to require surgery</strong></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="163" data-paginate="true" data-theme="gaia" data-marpit-pagination="163" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Surgery in the Urgent Setting</h2>
+<ul>
+<li>Subtotal colectomy is the preferred surgery with end ileostomy and Hartmann’s pouch creation</li>
+<li>Rectal mucosectomy and ileoanal pull-through are deferred until the patient is optimized<br />
+– Nutritional status<br />
+– Off steroids<br />
+– Center of Excellence</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="164" data-paginate="true" data-background-color="white" data-theme="gaia" data-marpit-pagination="164" data-marpit-pagination-total="168" style="--paginate:true;--background-color:white;--theme:gaia;background-color:white;background-image:none;">
+<h2>Ulcerative Colitis Surgical Options</h2>
+<p><img src="d17.png" alt="" style="height:500px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="165" data-marpit-scope-GGVxUUYq="" data-paginate="true" data-theme="gaia" data-marpit-pagination="165" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Ileal Pouch Anal Anastomosis (IPAA)</h2>
+<ul>
+<li>Most common surgery performed to restore bowel function in UC</li>
+<li>Important to set the patients expectations prior to surgery:<br />
+— Usually have 4-8 bms/day<br />
+— Likely to have nocturnal BMs<br />
+— Many experience incontinence that increases over time</li>
+<li>Most will have a 3-stage set of surgeries
+<ol>
+<li>Subtotal colectomy</li>
+<li>Rectal mucosectomy and pouch creation with diverting loop ileostomy (DLI)</li>
+<li>Takedown of DLI</li>
+</ol>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="166" data-paginate="true" data-theme="gaia" data-marpit-pagination="166" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h2>Ulcerative Colitis and Colon Cancer<sup>8</sup></h2>
+<ul>
+<li>Increased risk of colon cancer, based on time since ulcerative colitis diagnosis, extent of disease, and disease severity</li>
+<li>Standardized incidence ratio 7 compared to the general population
+<ul>
+<li>Surveillance is recommended after 8-10 years of disease</li>
+<li>Surveillance can start after 10-15 years of disease in limited left-sided disease</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="167" data-paginate="true" data-theme="gaia" data-marpit-pagination="167" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol>
+<li>Frolkis AD et al. Gastroenterology 2013;145(5):996-1006.<br />
+Nguyen GC et al. Gastroenterology 2011;141(1):90-97.<br />
+Bouguen G, Peyrin-Biroulet L. Gut 2011;60(9):1178-1181.<br />
+Turner D et al. Clin Gastroenterol Hepatol 2007;5(1):103-110.</li>
+<li>Travis SP et al. Gut 2006;55(suppl 1):i16-i35.</li>
+<li>Lichtenstein GR et al. Am J Gastroenterol 2018;113(4):481-517.</li>
+<li>Louis E. Dig Dis 2012;30(4):376-379.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="168" data-paginate="true" data-theme="gaia" data-marpit-pagination="168" data-marpit-pagination-total="168" style="--paginate:true;--theme:gaia;">
+<h1>References</h1>
+<ol start="5">
+<li>Patel KV et al. Nat Rev Gastroenterol Hepatol 2016;13(12):707-719.<br />
+Nguyen DL et al. Eur J Gastroenterol Hepatol 2015;27(3):235-241.<br />
+Kim Dh et al. Korean J Gastroenterol 2009; 53:29-35.</li>
+<li>Lichtenstein GR et al. Am J Gastroenterol 2018;113(4):481-517.</li>
+<li>Beaugerie L, Itzkowitz SH. N Engl J Med 2015;372(15):1441-1452. Huang LC, Merchea A. Surg Clin North Am 2017;97(3):627-639.</li>
+<li>Beaugerie L, Itzkowitz SH. N Engl J Med 2015;372(15):1441-1452. Huang LC, Merchea A. Surg Clin North Am 2017;97(3):627-639.</li>
+</ol>
+</section>
+<script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class o extends HTMLElement{constructor(){super(),this.svgPreserveAspectRatio="xMinYMid meet";const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver(t("wrapperSize"))}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){var t,o,s,r,a;this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=null!==(t=this.shadowRoot.querySelector(`div[${e}]`))&&void 0!==t?t:void 0;const l=this.svg;this.svg=null!==(s=null===(o=this.wrapper)||void 0===o?void 0:o.querySelector(`svg[${i}]`))&&void 0!==s?s:void 0,this.svg!==l&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=null!==(a=null===(r=this.svg)||void 0===r?void 0:r.querySelector(`span[${n}]`))&&void 0!==a?a:void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){var t,e,i,n,o,s,r;let a=Math.ceil(null!==(e=null===(t=this.containerSize)||void 0===t?void 0:t.width)&&void 0!==e?e:0);const l=Math.ceil(null!==(n=null===(i=this.containerSize)||void 0===i?void 0:i.height)&&void 0!==n?n:0);void 0!==this.dataset.downscaleOnly&&(a=Math.max(a,null!==(s=null===(o=this.wrapperSize)||void 0===o?void 0:o.width)&&void 0!==s?s:0));const c=null===(r=this.svg)||void 0===r?void 0:r.querySelector(":scope > foreignObject");if(null==c||c.setAttribute("width",`${a}`),null==c||c.setAttribute("height",`${l}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${a} ${l}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=a<=0||l<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const s=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this.attachShadow({mode:"open"})}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_update(){const t=i?`<style>:host { ${i} }</style>`:"";let e="<slot></slot>";const{autoScaling:n}=this.dataset;if(void 0!==n){e=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===n?"data-downscale-only":""}>${e}</marp-auto-scaling>`}this.shadowRoot.innerHTML=t+e}};let r;const a=Symbol(),l="marpitSVGPolyfill:setZoomFactor,",c=Symbol();let d,p;function g(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[c]||(Object.defineProperty(window,c,{configurable:!0,value:!0}),window.addEventListener("message",(({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(l)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(p=i)}}catch(t){console.error(t)}})));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,o,s,r;t.style.transform||(t.style.transform="translateZ(0)");const a=i||p||t.currentScale||1;d!==a&&(d=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(o=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==o?o:0,c=null!==(r=null===(s=n.y)||void 0===s?void 0:s.baseVal.value)&&void 0!==r?r:0,d=n.children.length;for(let e=0;e<d;e+=1){const o=n.children[e];if("SECTION"===o.tagName){const{style:e}=o;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}})),!1!==n&&Array.from(e.querySelectorAll("iframe"),(({contentWindow:t})=>{null==t||t.postMessage(`${l}${n}`,"null"===window.origin?"*":window.origin)}))}function h({once:t=!1,target:e=document}={}){const i="Apple Computer, Inc."===navigator.vendor?[g]:[];let n=!t;const o=()=>{for(const t of i)t({target:e});n&&window.requestAnimationFrame(o)};return o(),()=>{n=!1}}d=1,p=void 0;const m=Symbol(),v=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[a];i||customElements.define("marp-auto-scaling",o);for(const n of Object.keys(t)){const o=`marp-${n}`,a=t[n].proto();null!=r||(r=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is")),r&&a!==HTMLElement?i||customElements.define(o,s(a,{style:t[n].style}),{extends:n}):(i||customElements.define(o,s(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${o}"]`).forEach((t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${o}`).replace(new RegExp(`</${n}>$`,"i"),`</${o}>`)})))}window[a]=!0})(e),e[m])return e[m];const i=h({target:e}),n=()=>{i(),delete e[m]},l=Object.assign(n,{cleanup:n,update:()=>v(e)});return Object.defineProperty(e,m,{configurable:!0,value:l}),l},u=document.currentScript;v(u?u.getRootNode():document)}();
+</script></foreignObject></svg></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@2.0.4/lib/bespoke.js.LICENSE.txt */
+!function(){"use strict";const e=document.body,t=(...e)=>history.replaceState(...e),n="presenter",r="next",o=["",n,r],a="data-bespoke-marp-",i=(e,{protocol:t,host:n,pathname:r,hash:o}=location)=>{const a=e.toString();return`${t}//${n}${r}${a?"?":""}${a}${o}`},s=()=>e.dataset.bespokeView,l=e=>new URLSearchParams(location.search).get(e),c=(e,n={})=>{var r;const o={location,setter:t,...n},a=new URLSearchParams(o.location.search);for(const t of Object.keys(e)){const n=e[t];"string"==typeof n?a.set(t,n):a.delete(t)}try{o.setter({...null!==(r=window.history.state)&&void 0!==r?r:{}},"",i(a,o.location))}catch(e){console.error(e)}},d=(()=>{const e="bespoke-marp";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(e){return!1}})(),u=e=>{try{return localStorage.getItem(e)}catch(e){return null}},m=(e,t)=>{try{return localStorage.setItem(e,t),!0}catch(e){return!1}},f=e=>{try{return localStorage.removeItem(e),!0}catch(e){return!1}},g=(e,t)=>{const n="aria-hidden";t?e.setAttribute(n,"true"):e.removeAttribute(n)},p=e=>{e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach((e=>e.classList.add("bespoke-marp-slide"))),e.on("activate",(t=>{const n="bespoke-marp-active",r=t.slide,o=r.classList,a=!o.contains(n);if(e.slides.forEach((e=>{e.classList.remove(n),g(e,!0)})),o.add(n),g(r,!1),a){const e=`${n}-ready`;o.add(e),document.body.clientHeight,o.remove(e)}}))},v=e=>{let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map((e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]))});const r=r=>void 0!==e.fragments[t][n+r],o=(r,o)=>{t=r,n=o,e.fragments.forEach(((e,t)=>{e.forEach(((e,n)=>{if(null==e)return;const i=t<r||t===r&&n<=o;e.setAttribute(`${a}fragment`,(i?"":"in")+"active");const s=`${a}current-fragment`;t===r&&n===o?e.setAttribute(s,"current"):e.removeAttribute(s)}))})),e.fragmentIndex=o;const i={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:o};e.fire("fragment",i)};e.on("next",(({fragment:a=!0})=>{if(a){if(r(1))return o(t,n+1),!1;const a=t+1;e.fragments[a]&&o(a,0)}else{const r=e.fragments[t].length;if(n+1<r)return o(t,r-1),!1;const a=e.fragments[t+1];a&&o(t+1,a.length-1)}})),e.on("prev",(({fragment:a=!0})=>{if(r(-1)&&a)return o(t,n-1),!1;const i=t-1;e.fragments[i]&&o(i,e.fragments[i].length-1)})),e.on("slide",(({index:t,fragment:n})=>{let r=0;if(void 0!==n){const o=e.fragments[t];if(o){const{length:e}=o;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}o(t,r)})),o(0,0)},h=document,y=()=>!(!h.fullscreenEnabled&&!h.webkitFullscreenEnabled),b=()=>!(!h.fullscreenElement&&!h.webkitFullscreenElement),w=e=>{e.fullscreen=()=>{y()&&(async()=>{return b()?null===(e=h.exitFullscreen||h.webkitExitFullscreen)||void 0===e?void 0:e.call(h):((e=h.body)=>{var t;return null===(t=e.requestFullscreen||e.webkitRequestFullscreen)||void 0===t?void 0:t.call(e)})();var e})()},document.addEventListener("keydown",(t=>{"f"!==t.key&&"F11"!==t.key||t.altKey||t.ctrlKey||t.metaKey||!y()||(e.fullscreen(),t.preventDefault())}))},x="bespoke-marp-inactive",k=(e=2e3)=>({parent:t,fire:n})=>{const r=t.classList,o=e=>n(`marp-${e?"":"in"}active`);let a;const i=()=>{a&&clearTimeout(a),a=setTimeout((()=>{r.add(x),o()}),e),r.contains(x)&&(r.remove(x),o(!0))};for(const e of["mousedown","mousemove","touchend"])document.addEventListener(e,i);setTimeout(i,0)},E=["AUDIO","BUTTON","INPUT","SELECT","TEXTAREA","VIDEO"],$=e=>{e.parent.addEventListener("keydown",(e=>{if(!e.target)return;const t=e.target;(E.includes(t.nodeName)||"true"===t.contentEditable)&&e.stopPropagation()}))},L=e=>{window.addEventListener("load",(()=>{for(const t of e.slides){const e=t.querySelector("marp-auto-scaling, [data-auto-scaling], [data-marp-fitting]");t.setAttribute(`${a}load`,e?"":"hideable")}}))},S=({interval:e=250}={})=>t=>{document.addEventListener("keydown",(e=>{if(" "===e.key&&e.shiftKey)t.prev();else if("ArrowLeft"===e.key||"ArrowUp"===e.key||"PageUp"===e.key)t.prev({fragment:!e.shiftKey});else if(" "!==e.key||e.shiftKey)if("ArrowRight"===e.key||"ArrowDown"===e.key||"PageDown"===e.key)t.next({fragment:!e.shiftKey});else if("End"===e.key)t.slide(t.slides.length-1,{fragment:-1});else{if("Home"!==e.key)return;t.slide(0)}else t.next();e.preventDefault()}));let n,r,o=0;t.parent.addEventListener("wheel",(a=>{let i=!1;const s=(e,t)=>{e&&(i=i||((e,t)=>((e,t)=>{const n="X"===t?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]})(e,t)&&((e,t)=>{const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r})(getComputedStyle(e),t))(e,t)),(null==e?void 0:e.parentElement)&&s(e.parentElement,t)};if(0!==a.deltaX&&s(a.target,"X"),0!==a.deltaY&&s(a.target,"Y"),i)return;a.preventDefault();const l=Math.sqrt(a.deltaX**2+a.deltaY**2);if(void 0!==a.wheelDelta){if(void 0===a.webkitForce&&Math.abs(a.wheelDelta)<40)return;if(a.deltaMode===a.DOM_DELTA_PIXEL&&l<4)return}else if(a.deltaMode===a.DOM_DELTA_PIXEL&&l<12)return;r&&clearTimeout(r),r=setTimeout((()=>{n=0}),e);const c=Date.now()-o<e,d=l<=n;if(n=l,c||d)return;let u;(a.deltaX>0||a.deltaY>0)&&(u="next"),(a.deltaX<0||a.deltaY<0)&&(u="prev"),u&&(t[u](),o=Date.now())}))},P=(e=".bespoke-marp-osc")=>{const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[${a}osc=${JSON.stringify(e)}]`).forEach(n)};return y()||n("fullscreen",(e=>e.style.display="none")),d||n("presenter",(e=>{e.disabled=!0,e.title="Presenter view is disabled due to restricted localStorage."})),e=>{t.addEventListener("click",(t=>{if(t.target instanceof HTMLElement){const{bespokeMarpOsc:n}=t.target.dataset;n&&t.target.blur();const r={fragment:!t.shiftKey};"next"===n?e.next(r):"prev"===n?e.prev(r):"fullscreen"===n?null==e||e.fullscreen():"presenter"===n&&e.openPresenterView()}})),e.parent.appendChild(t),e.on("activate",(({index:t})=>{n("page",(n=>n.textContent=`Page ${t+1} of ${e.slides.length}`))})),e.on("fragment",(({index:t,fragments:r,fragmentIndex:o})=>{n("prev",(e=>e.disabled=0===t&&0===o)),n("next",(n=>n.disabled=t===e.slides.length-1&&o===r.length-1))})),e.on("marp-active",(()=>g(t,!1))),e.on("marp-inactive",(()=>g(t,!0))),y()&&(e=>{for(const t of["","webkit"])h.addEventListener(t+"fullscreenchange",e)})((()=>n("fullscreen",(e=>e.classList.toggle("exit",y()&&b())))))}},_=e=>{window.addEventListener("message",(t=>{if(t.origin!==window.origin)return;const[n,r]=t.data.split(":");if("navigate"===n){const[t,n]=r.split(",");let o=Number.parseInt(t,10),a=Number.parseInt(n,10)+1;a>=e.fragments[o].length&&(o+=1,a=0),e.slide(o,{fragment:a})}}))};var T=["area","base","br","col","command","embed","hr","img","input","keygen","link","meta","param","source","track","wbr"];let I=e=>String(e).replace(/[&<>"']/g,(e=>`&${A[e]};`)),A={"&":"amp","<":"lt",">":"gt",'"':"quot","'":"apos"},M="dangerouslySetInnerHTML",D={className:"class",htmlFor:"for"},O={};function C(e,t){let n=[],r="";t=t||{};for(let e=arguments.length;e-- >2;)n.push(arguments[e]);if("function"==typeof e)return t.children=n.reverse(),e(t);if(e){if(r+="<"+e,t)for(let e in t)!1!==t[e]&&null!=t[e]&&e!==M&&(r+=` ${D[e]?D[e]:I(e)}="${I(t[e])}"`);r+=">"}if(-1===T.indexOf(e)){if(t[M])r+=t[M].__html;else for(;n.length;){let e=n.pop();if(e)if(e.pop)for(let t=e.length;t--;)n.push(e[t]);else r+=!0===O[e]?e:I(e)}r+=e?`</${e}>`:""}return O[r]=!0,r}const N=({children:e})=>C(null,null,...e),B="bespoke-marp-presenter-",q={container:`${B}container`,dragbar:`${B}dragbar-container`,next:`${B}next`,nextContainer:`${B}next-container`,noteContainer:`${B}note-container`,noteWrapper:`${B}note-wrapper`,noteButtons:`${B}note-buttons`,infoContainer:`${B}info-container`,infoPage:`${B}info-page`,infoPageText:`${B}info-page-text`,infoPagePrev:`${B}info-page-prev`,infoPageNext:`${B}info-page-next`,noteButtonsBigger:`${B}note-bigger`,noteButtonsSmaller:`${B}note-smaller`,infoTime:`${B}info-time`,infoTimer:`${B}info-timer`},K=e=>{const{title:t}=document;document.title="[Presenter view]"+(t?` - ${t}`:"");const n={},r=e=>(n[e]=n[e]||document.querySelector(`.${e}`),n[e]);document.body.appendChild((e=>{const t=document.createElement("div");return t.className=q.container,t.appendChild(e),t.insertAdjacentHTML("beforeend",C(N,null,C("div",{class:q.nextContainer},C("iframe",{class:q.next,src:"?view=next"})),C("div",{class:q.dragbar}),C("div",{class:q.noteContainer},C("div",{class:q.noteWrapper}),C("div",{class:q.noteButtons},C("button",{class:q.noteButtonsSmaller,tabindex:"-1",title:"Smaller notes font size"},"Smaller notes font size"),C("button",{class:q.noteButtonsBigger,tabindex:"-1",title:"Bigger notes font size"},"Bigger notes font size"))),C("div",{class:q.infoContainer},C("div",{class:q.infoPage},C("button",{class:q.infoPagePrev,tabindex:"-1",title:"Previous"},"Previous"),C("span",{class:q.infoPageText}),C("button",{class:q.infoPageNext,tabindex:"-1",title:"Next"},"Next")),C("time",{class:q.infoTime,title:"Current time"}),C("time",{class:q.infoTimer,title:"Timer"})))),t})(e.parent)),(e=>{let t=!1;r(q.dragbar).addEventListener("mousedown",(()=>{t=!0,r(q.dragbar).classList.add("active")})),window.addEventListener("mouseup",(()=>{t=!1,r(q.dragbar).classList.remove("active")})),window.addEventListener("mousemove",(e=>{if(!t)return;const n=e.clientX/document.documentElement.clientWidth*100;r(q.container).style.setProperty("--bespoke-marp-presenter-split-ratio",`${Math.max(0,Math.min(100,n))}%`)})),r(q.nextContainer).addEventListener("click",(()=>e.next()));const n=r(q.next),o=(a=n,(e,t)=>{var n;return null===(n=a.contentWindow)||void 0===n?void 0:n.postMessage(`navigate:${e},${t}`,"null"===window.origin?"*":window.origin)});var a;n.addEventListener("load",(()=>{r(q.nextContainer).classList.add("active"),o(e.slide(),e.fragmentIndex),e.on("fragment",(({index:e,fragmentIndex:t})=>o(e,t)))}));const i=document.querySelectorAll(".bespoke-marp-note");i.forEach((e=>{e.addEventListener("keydown",(e=>e.stopPropagation())),r(q.noteWrapper).appendChild(e)})),e.on("activate",(()=>i.forEach((t=>t.classList.toggle("active",t.dataset.index==e.slide())))));let s=0;const l=e=>{s=Math.max(-5,s+e),r(q.noteContainer).style.setProperty("--bespoke-marp-note-font-scale",(1.2**s).toFixed(4))},c=()=>l(1),d=()=>l(-1),u=r(q.noteButtonsBigger),m=r(q.noteButtonsSmaller);u.addEventListener("click",(()=>{u.blur(),c()})),m.addEventListener("click",(()=>{m.blur(),d()})),document.addEventListener("keydown",(e=>{"+"===e.key&&c(),"-"===e.key&&d()}),!0),e.on("activate",(({index:t})=>{r(q.infoPageText).textContent=`${t+1} / ${e.slides.length}`}));const f=r(q.infoPagePrev),g=r(q.infoPageNext);f.addEventListener("click",(t=>{f.blur(),e.prev({fragment:!t.shiftKey})})),g.addEventListener("click",(t=>{g.blur(),e.next({fragment:!t.shiftKey})})),e.on("fragment",(({index:t,fragments:n,fragmentIndex:r})=>{f.disabled=0===t&&0===r,g.disabled=t===e.slides.length-1&&r===n.length-1}));let p=new Date;const v=()=>{const e=new Date,t=e=>`${Math.floor(e)}`.padStart(2,"0"),n=e.getTime()-p.getTime(),o=t(n/1e3%60),a=t(n/1e3/60%60),i=t(n/36e5%24);r(q.infoTime).textContent=e.toLocaleTimeString(),r(q.infoTimer).textContent=`${i}:${a}:${o}`};v(),setInterval(v,250),r(q.infoTimer).addEventListener("click",(()=>{p=new Date}))})(e)},F=e=>{if(!(e=>e.syncKey&&"string"==typeof e.syncKey)(e))throw new Error("The current instance of Bespoke.js is invalid for Marp bespoke presenter plugin.");Object.defineProperties(e,{openPresenterView:{enumerable:!0,value:j},presenterUrl:{enumerable:!0,get:U}}),d&&document.addEventListener("keydown",(t=>{"p"!==t.key||t.altKey||t.ctrlKey||t.metaKey||(t.preventDefault(),e.openPresenterView())}))};function j(){const{max:e,floor:t}=Math,n=e(t(.85*window.innerWidth),640),r=e(t(.85*window.innerHeight),360);return window.open(this.presenterUrl,B+this.syncKey,`width=${n},height=${r},menubar=no,toolbar=no`)}function U(){const e=new URLSearchParams(location.search);return e.set("view","presenter"),e.set("sync",this.syncKey),i(e)}const V=e=>{const t=s();return t===r&&e.appendChild(document.createElement("span")),{"":F,[n]:K,[r]:_}[t]},X=e=>{e.on("activate",(t=>{document.querySelectorAll(".bespoke-progress-parent > .bespoke-progress-bar").forEach((n=>{n.style.flexBasis=100*t.index/(e.slides.length-1)+"%"}))}))},H=e=>{const t=Number.parseInt(e,10);return Number.isNaN(t)?null:t},R=(e={})=>{const t={history:!0,...e};return e=>{let n=!0;const r=e=>{const t=n;try{return n=!0,e()}finally{n=t}},o=(t={fragment:!0})=>{((t,n)=>{const{min:r,max:o}=Math,{fragments:a,slides:i}=e,s=o(0,r(t,i.length-1)),l=o(0,r(n||0,a[s].length-1));s===e.slide()&&l===e.fragmentIndex||e.slide(s,{fragment:l})})((H(location.hash.slice(1))||1)-1,t.fragment?H(l("f")||""):null)};e.on("fragment",(({index:e,fragmentIndex:r})=>{n||c({f:0===r||r.toString()},{location:{...location,hash:`#${e+1}`},setter:(...e)=>t.history?history.pushState(...e):history.replaceState(...e)})})),setTimeout((()=>{o(),window.addEventListener("hashchange",(()=>r((()=>{o({fragment:!1}),c({f:void 0})})))),window.addEventListener("popstate",(()=>{n||r((()=>o()))})),n=!1}),0)}},W=(e={})=>{var n;const r=e.key||(null===(n=window.history.state)||void 0===n?void 0:n.marpBespokeSyncKey)||Math.random().toString(36).slice(2),o=`bespoke-marp-sync-${r}`;var a;a={marpBespokeSyncKey:r},c({},{setter:(e,...n)=>t({...e,...a},...n)});const i=()=>{const e=u(o);return e?JSON.parse(e):Object.create(null)},s=e=>{const t=i(),n={...t,...e(t)};return m(o,JSON.stringify(n)),n},l=()=>{window.removeEventListener("pageshow",l),s((e=>({reference:(e.reference||0)+1})))};return e=>{l(),Object.defineProperty(e,"syncKey",{value:r,enumerable:!0});let t=!0;setTimeout((()=>{e.on("fragment",(e=>{t&&s((()=>({index:e.index,fragmentIndex:e.fragmentIndex})))}))}),0),window.addEventListener("storage",(n=>{if(n.key===o&&n.oldValue&&n.newValue){const r=JSON.parse(n.oldValue),o=JSON.parse(n.newValue);if(r.index!==o.index||r.fragmentIndex!==o.fragmentIndex)try{t=!1,e.slide(o.index,{fragment:o.fragmentIndex,forSync:!0})}finally{t=!0}}}));const n=()=>{const{reference:e}=i();void 0===e||e<=1?f(o):s((()=>({reference:e-1})))};window.addEventListener("pagehide",(e=>{e.persisted&&window.addEventListener("pageshow",l),n()})),e.on("destroy",n)}},{PI:J,abs:Y,sqrt:z,atan2:G}=Math,Q={passive:!0},Z=({slope:e=-.7,swipeThreshold:t=30}={})=>n=>{let r;const o=n.parent,a=e=>{const t=o.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};o.addEventListener("touchstart",(({touches:e})=>{r=1===e.length?a(e[0]):void 0}),Q),o.addEventListener("touchmove",(e=>{if(r)if(1===e.touches.length){e.preventDefault();const t=a(e.touches[0]),n=t.x-r.x,o=t.y-r.y;r.delta=z(Y(n)**2+Y(o)**2),r.radian=G(n,o)}else r=void 0})),o.addEventListener("touchend",(o=>{if(r){if(r.delta&&r.delta>=t&&r.radian){const t=(r.radian-e+J)%(2*J)-J;n[t<0?"next":"prev"](),o.stopPropagation()}r=void 0}}),Q)},ee=new Map;ee.clear(),ee.set("none",{backward:{both:void 0,incoming:void 0,outgoing:void 0},forward:{both:void 0,incoming:void 0,outgoing:void 0}});const te={both:"",outgoing:"outgoing-",incoming:"incoming-"},ne={forward:"",backward:"-backward"},re=e=>`--marp-bespoke-transition-animation-${e}`,oe=e=>`--marp-transition-${e}`,ae=re("name"),ie=re("duration"),se=e=>new Promise((t=>{const n={},r=document.createElement("div"),o=e=>{r.remove(),t(e)};r.addEventListener("animationstart",(()=>o(n))),Object.assign(r.style,{animationName:e,animationDuration:"1s",animationFillMode:"both",animationPlayState:"paused",position:"absolute",pointerEvents:"none"}),document.body.appendChild(r);const a=getComputedStyle(r).getPropertyValue(oe("duration"));a&&(n.defaultDuration=a),((e,t)=>{requestAnimationFrame((()=>{e.style.animationPlayState="running",requestAnimationFrame((()=>t(void 0)))}))})(r,o)})),le=async e=>ee.has(e)?ee.get(e):(e=>{const t={},n=[];for(const[r,o]of Object.entries(te))for(const[a,i]of Object.entries(ne)){const s=`marp-${o}transition${i}-${e}`;n.push(se(s).then((e=>{t[a]=t[a]||{},t[a][r]=e?{...e,name:s}:void 0})))}return Promise.all(n).then((()=>t))})(e).then((t=>(ee.set(e,t),t))),ce=e=>Object.values(e).flatMap(Object.values).every((e=>!e)),de=(e,{type:t,backward:n})=>{const r=e[n?"backward":"forward"],o=(()=>{const e=r[t],n=e=>({[ae]:e.name});if(e)return n(e);if(r.both){const e=n(r.both);return"incoming"===t&&(e[re("direction")]="reverse"),e}})();return!o&&n?de(e,{type:t,backward:!1}):o||{[ae]:"__bespoke_marp_transition_no_animation__"}},ue=e=>{if(e)try{const t=JSON.parse(e);if((e=>{if("object"!=typeof e)return!1;const t=e;return"string"==typeof t.name&&(void 0===t.duration||"string"==typeof t.duration)})(t))return t}catch(e){}},me="_tSId",fe="_tA",ge="bespoke-marp-transition-warming-up",pe=window.matchMedia("(prefers-reduced-motion: reduce)"),ve="__bespoke_marp_transition_reduced_outgoing__",he="__bespoke_marp_transition_reduced_incoming__",ye={forward:{both:void 0,incoming:{name:he},outgoing:{name:ve}},backward:{both:void 0,incoming:{name:he},outgoing:{name:ve}}},be=e=>{if(!document.createDocumentTransition)return;const t=t=>(void 0!==t&&(e._tD=t),e._tD);let n;t(!1);const r=(e,n)=>{requestAnimationFrame((async()=>{t(e);try{await n()}catch(e){console.warn(e)}finally{t(!1)}}))};((...e)=>{const t=[...new Set(e).values()];return Promise.all(t.map((e=>le(e)))).then()})(...Array.from(document.querySelectorAll("section[data-transition], section[data-transition-back]")).flatMap((e=>[e.dataset.transition,e.dataset.transitionBack].flatMap((e=>{const t=ue(e);return[null==t?void 0:t.name,(null==t?void 0:t.builtinFallback)?`__builtin__${t.name}`:void 0]})).filter((e=>!!e))))).then((()=>{document.querySelectorAll("style").forEach((e=>{e.innerHTML=e.innerHTML.replace(/--marp-transition-duration:[^;}]*[;}]/g,(e=>e.slice(0,-1)+"!important"+e.slice(-1)))}))}));const o=(n,{back:o,cond:a})=>i=>{var s;const l=t();if(l)return!!i._tA||!("object"!=typeof l||(l.abandon(),!i.forSync));if(!a(i))return!0;const c=e.slides[e.slide()],d=()=>{var e;return null!==(e=i.back)&&void 0!==e?e:o},u="data-transition"+(d()?"-back":""),m=c.querySelector(`section[${u}]`);if(!m)return!0;const f=ue(null!==(s=m.getAttribute(u))&&void 0!==s?s:void 0);return!f||((async(e,{builtinFallback:t=!0}={})=>{let n=await le(e);if(ce(n)){if(!t)return;return n=await le(`__builtin__${e}`),ce(n)?void 0:n}return n})(f.name,{builtinFallback:f.builtinFallback}).then((e=>{if(!e)return r(!0,(()=>n(i)));let o=e;pe.matches&&(console.warn("Use a constant animation to transition because preferring reduced motion by viewer has detected. "),o=ye);const a=document.getElementById(me);a&&a.remove();const s=document.createElement("style");s.id=me,document.head.appendChild(s),((e,t)=>{const n=[`:root{${oe("direction")}:${t.backward?-1:1};}`],r=t=>{var n,o,a;const i=(null===(n=e[t].both)||void 0===n?void 0:n.defaultDuration)||(null===(o=e[t].outgoing)||void 0===o?void 0:o.defaultDuration)||(null===(a=e[t].incoming)||void 0===a?void 0:a.defaultDuration);return"forward"===t?i:i||r("forward")},o=t.duration||r(t.backward?"backward":"forward");void 0!==o&&n.push(`::page-transition-container(*){${ie}:${o};}`);const a=e=>Object.entries(e).map((([e,t])=>`${e}:${t};`)).join("");return n.push(`::page-transition-outgoing-image(root){${a(de(e,{...t,type:"outgoing"}))}}`,`::page-transition-incoming-image(root){${a(de(e,{...t,type:"incoming"}))}}`),n})(o,{backward:d(),duration:f.duration}).forEach((e=>{var t;return null===(t=s.sheet)||void 0===t?void 0:t.insertRule(e)}));try{const e=document.createDocumentTransition(),t=document.documentElement.classList;t.add(ge);let o=!1;const a=()=>{o||(n(i),o=!0,t.remove(ge))};r(e,(async()=>{try{await e.start(a)}catch(e){console.error(e),a()}finally{s.remove(),t.remove(ge)}}))}catch(e){t(!1)}})),!1)};e.on("prev",o((t=>e.prev({...t,[fe]:!0})),{back:!0,cond:e=>{var t;return e.index>0&&!((null===(t=e.fragment)||void 0===t||t)&&n.fragmentIndex>0)}})),e.on("next",o((t=>e.next({...t,[fe]:!0})),{cond:t=>t.index+1<e.slides.length&&!(n.fragmentIndex+1<n.fragments.length)})),setTimeout((()=>{e.on("slide",o((t=>e.slide(t.index,{...t,[fe]:!0})),{cond:t=>{const n=e.slide();return t.index!==n&&(t.back=t.index<n,!0)}}))}),0),e.on("fragment",(e=>{n=e}))};let we;const xe=()=>(void 0===we&&(we="wakeLock"in navigator&&navigator.wakeLock),we),ke=async()=>{const e=xe();if(e)try{return await e.request("screen")}catch(e){console.warn(e)}return null},Ee=async()=>{if(!xe())return;let e;const t=()=>{e&&"visible"===document.visibilityState&&ke()};for(const e of["visibilitychange","fullscreenchange"])document.addEventListener(e,t);return e=await ke(),e};((t=document.getElementById("p"))=>{(()=>{const t=l("view");e.dataset.bespokeView=t===r||t===n?t:""})();const a=(e=>{const t=l(e);return c({[e]:void 0}),t})("sync")||void 0;var i,d,u,m,f,g,h,y,b,x,E,_;i=t,d=((...e)=>{const t=o.findIndex((e=>s()===e));return e.map((([e,n])=>e[t]&&n)).filter((e=>e))})([[1,1,0],W({key:a})],[[1,1,1],V(t)],[[1,1,0],$],[[1,1,1],p],[[1,0,0],k()],[[1,1,1],L],[[1,1,1],R({history:!1})],[[1,1,0],S()],[[1,1,0],w],[[1,0,0],X],[[1,1,0],Z()],[[1,0,0],P()],[[1,0,0],be],[[1,1,1],v],[[1,1,0],Ee]),m=1===(i.parent||i).nodeType?i.parent||i:document.querySelector(i.parent||i),f=[].filter.call("string"==typeof i.slides?m.querySelectorAll(i.slides):i.slides||m.children,(function(e){return"SCRIPT"!==e.nodeName})),g={},h=function(e,t){return(t=t||{}).index=f.indexOf(e),t.slide=e,t},x=function(e,t){f[e]&&(u&&b("deactivate",h(u,t)),u=f[e],b("activate",h(u,t)))},E=function(e,t){var n=f.indexOf(u)+e;b(e>0?"next":"prev",h(u,t))&&x(n,t)},_={off:y=function(e,t){g[e]=(g[e]||[]).filter((function(e){return e!==t}))},on:function(e,t){return(g[e]||(g[e]=[])).push(t),y.bind(null,e,t)},fire:b=function(e,t){return(g[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},slide:function(e,t){if(!arguments.length)return f.indexOf(u);b("slide",h(f[e],t))&&x(e,t)},next:E.bind(null,1),prev:E.bind(null,-1),parent:m,slides:f,destroy:function(e){b("destroy",h(u,e)),g={}}},(d||[]).forEach((function(e){e(_)})),u||x(0)})()}();</script></body></html>
