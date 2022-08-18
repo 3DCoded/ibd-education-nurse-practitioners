@@ -244,6 +244,10 @@ Proposed collaborative care environments:
 - Pregnancy/preconception
   - Includes MFM specialist
   - Addresses fertility, pre-conception, therapy, delivery
+
+---
+
+## Under One Roof... (Continued)<sup>10</sup>
 - Transition of care
   - Includes adult/child-centered care providers and support services
 - Psychosocial care
@@ -354,6 +358,10 @@ Proposed collaborative care environments:
   - **Work without affecting systemic immune system
 - Topical contact with inflamed mucosa required; oral and rectal formulations available
 - First line for induction and maintenance of mild to moderate ulcerative colitis
+
+---
+
+## 5-Aminosalicylates (5-ASAs) (Continued) <sup>2</sup>
 - Debated use in Crohn’s disease
   - Cochrane analysis noted sulfasalazine is superior to placebo for inducing remission in Crohn’s colitis (45% vs 29%; RR 1.38, 95% CI 1.00 to 1.89) at 17-18 weeks
 
@@ -411,6 +419,12 @@ Suppository&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Foam
 
 ## 5-ASAs: Combined Oral & Topical Approach <sup>5</sup>
 
+<style scoped>
+  li {
+    font-size: 32px;
+  }
+</style>
+
 - Meta-analysis by Ford et al evaluated oral vs topical vs combined 5-ASA therapy
   - Combined 5-ASA therapy was superior to oral 5-ASA alone for induction of remission of mildly to moderately active extensive ulcerative colitis
   - Trend toward superiority of topical over oral approach in distal ulcerative colitis
@@ -420,6 +434,12 @@ Suppository&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Foam
 ---
 
 ## 5-ASAs: Side Effects
+
+<style scoped>
+  li {
+    font-size: 32px;
+  }
+</style>
 
 - Common: headache, hair loss
 - Hypersensitivities
@@ -768,7 +788,7 @@ Suppository&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Foam
 
 <style scoped>
   table {
-    font-size: 28px;
+    font-size: 27px;
     text-align: left;
   }
   th {
@@ -1339,6 +1359,12 @@ Primary and secondary loss of response can be divided into:
 - Increase in voluntary childlessness compared to non-IBD patients
 
 ---
+
+<style scoped>
+  li {
+    font-size: 25px;
+  }
+</style>
 
 ## Ideal Care Team Roster<sup>4</sup>
 The captains:
