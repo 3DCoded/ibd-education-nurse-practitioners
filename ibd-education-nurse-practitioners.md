@@ -231,7 +231,7 @@ table {
 
 <!-- _backgroundColor: white -->
 
-![w:1100](d4.png)
+![h:500](d4.png)
 
 ---
 
