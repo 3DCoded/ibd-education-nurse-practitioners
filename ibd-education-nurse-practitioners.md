@@ -9,15 +9,11 @@ theme: gaia
 ---
 
 ## Goals to be Covered
-- Goal #1: Disease Classification
-- Goal #2: Disease Management Strategy
-- Goal #3: Treatment (to be covered in other lectures today)
-- Goal #4: Monitoring
-- Goal #5: Taking Care of the Whole Patient
-
----
-
-# Goal #1
+- [Goal #1: Disease Classification](#3)
+- [Goal #2: Disease Management Strategy](#9)
+- Goal #3: Treatment (to be covered in other lectures)
+- [Goal #4: Monitoring](#10)
+- [Goal #5: Taking Care of the Whole Patient](#11)
 
 ---
 
@@ -31,13 +27,13 @@ Aim to idenfity:
 
 ---
 
-## Chron's Disease Burden: Low Risk<sup>2</sup>
+## Crohn's Disease Burden: Low Risk<sup>2</sup>
 <!-- _backgroundColor: white -->
 ![w:1100](d1.png)
 
 ---
 
-# Chron's Disease Burden: Moderate to High Risk<sup>3</sup>
+# Crohn's Disease Burden: Moderate to High Risk<sup>3</sup>
 <!-- _backgroundColor: white -->
 ![w:1100](d2.png)
 
@@ -78,19 +74,11 @@ table {
 
 ---
 
-# Goal #2
-
----
-
 ## Goal #2: Disease Management Strategy<sup>7</sup>
 - Upon diagnosis, must provide patients with education regarding chronicity and need for ongoing therapy
 - Aim to induce remission
 - Avoidance of long-term exposure to steroid-based treatment regimens
 - Aim to maintain remission
-
----
-
-# Goal #4
 
 ---
 
@@ -104,11 +92,7 @@ table {
 - Mucosal healing is a goal of therapy
 - Long-term observational studies in Crohn’s disease and ulcerative colitis are still needed to assess the utility of the treat to target strategy
 
----
-
-# Goal #5
-
----
+--- 
 
 ## Goal #5: Taking Care of the Whole Patient<sup>8</sup>
 
@@ -256,10 +240,6 @@ Proposed collaborative care environments:
 
 ---
 
-# What can you do back home?
-
----
-
 ## Preventive Care in IBD<sup>11</sup>
 - For many patients, the gastroenterologist is the only provider
 - Data suggest IBD patients do not receive preventive services at the same rate as general medicine patients
@@ -345,10 +325,6 @@ Proposed collaborative care environments:
 | No perianal disease | Mild endoscopic findings |
 | No penetrating disease | No hospitalizations |
 | No prior surgeries | No prior C diff or CMV infection |
-
----
-
-# 5 - Aminosalicylates
 
 ---
 
@@ -453,10 +429,6 @@ Suppository&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Foam
 
 ---
 
-# Corticosteroids
-
----
-
 ## Corticosteroids <sup>6</sup>
 - Prevent migration of inflammatory mediators to the GI tract
 - Interfere with production of nuclear factor-kappa ß (NF-
@@ -517,10 +489,6 @@ Suppository&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Foam
 
 ---
 
-# Antibiotics
-
----
-
 <style scoped>
   li {
     font-size: 30px;
@@ -537,10 +505,6 @@ Suppository&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Foam
     - No more effective than placebo
   - **Antimycobacterial agents**
     - No more effective than placebo
-
----
-
-# Immunomodulators
 
 ---
 
@@ -1711,7 +1675,7 @@ First standardized work flow for providers treating IBD patients through family 
 <!-- _backgroundColor: white -->
 
 ## Toxic Megacolon
-![w:1100](d16.png)
+![h:500](d16.png)
 
 ---
 
