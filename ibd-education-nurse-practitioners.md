@@ -4,6 +4,15 @@ paginate: true
 theme: gaia
 ---
 
+# IBD Primer
+1. [Goals of Caring for Patients with IBD](#2)
+2. [Mild to Moderate IBD](#25)
+3. [Biologics and Small Molecules](#64)
+4. [Loss of Response to IBD Therapies](#96)
+5. [Pregnancy with IBD](#113)
+6. [Surgery for IBD](#141)
+---
+
 # Goals of Caring for Patients with IBD
 
 ---
@@ -294,7 +303,11 @@ Proposed collaborative care environments:
 
 ---
 
-# Use of Medications for the Treatment of Mild to Moderate IBD
+# Mild to Moderate IBD
+
+---
+
+## Use of Medications for the Treatment of Mild to Moderate IBD
 
 ---
 
