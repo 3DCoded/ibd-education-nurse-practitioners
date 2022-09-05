@@ -136,7 +136,7 @@ table {
 | Pediatricians | ➔ | Transition of Care |
 | Gastroenterology | ➔ | Coordination of Care |
 | &emsp;- Dietician/Nutrition | ➔ | Assessment/Management |
-| &emsp;- Adcanced Practitioners | ➔ | F/U, Crisis Management |
+| &emsp;- Advanced Practitioners | ➔ | F/U, Crisis Management |
 | &emsp;- Nursing | ➔ | Communications/Support |
 | &emsp;- MA/s/Liaisons | ➔ | Scheduling/Authorizations |
 | &emsp;- Pharmacy | ➔ | Prescriptions/Infusions |
